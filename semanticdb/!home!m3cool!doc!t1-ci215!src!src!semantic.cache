@@ -1,0 +1,265 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("sys/types.h" include (:system-flag t) nil [40 62])
+            ("sys/socket.h" include (:system-flag t) nil [63 86])
+            ("stdio.h" include (:system-flag t) nil [87 105])
+            ("sys/un.h" include (:system-flag t) nil [106 125])
+            ("unistd.h" include (:system-flag t) nil [126 145])
+            ("pthread.h" include (:system-flag t) nil [146 166])
+            ("semaphore.h" include (:system-flag t) nil [167 189])
+            ("sys/ioctl.h" include (:system-flag t) nil [190 212])
+            ("openssl/conf.h" include (:system-flag t) nil [213 238])
+            ("openssl/evp.h" include (:system-flag t) nil [239 263])
+            ("openssl/err.h" include (:system-flag t) nil [264 288])
+            ("openssl/engine.h" include (:system-flag t) nil [289 316])
+            ("casanova.h" include nil nil [318 339])
+            ("locking/locking.h" include nil nil [340 368])
+            ("hash/hash.h" include nil nil [369 391])
+            ("CRYPTEDSIZE" variable (:constant-flag t) nil [485 496])
+            ("PUT_THREADS" variable (:constant-flag t) nil [510 521])
+            ("GET_THREADS" variable (:constant-flag t) nil [532 543])
+            ("key" variable
+               (:pointer 1
+                :default-value "(unsigned char *)\"01234567890123456789012345678901\""
+                :type "unsigned char")
+                nil [652 725])
+            ("encrypt" function
+               (:prototype-flag t
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("EVP_CIPHER_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [745 762])
+                    ("" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [763 779])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [780 785])
+                    ("" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [786 802]))                  
+                :type "int")
+                nil [726 803])
+            ("decrypt" function
+               (:prototype-flag t
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("EVP_CIPHER_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [823 840])
+                    ("" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [841 857])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [858 863])
+                    ("" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [864 880]))                  
+                :type "int")
+                nil [804 881])
+            ("handleErrors" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [901 906]))                  
+                :type "void")
+                nil [883 941])
+            ("get_entries" function
+               (:prototype-flag t
+                :type "void")
+                nil [944 963])
+            ("put_entries" function
+               (:prototype-flag t
+                :type "void")
+                nil [964 983])
+            ("store_mult" function
+               (:prototype-flag t
+                :type "void")
+                nil [985 1003])
+            ("retrieve_mult" function
+               (:prototype-flag t
+                :type "void")
+                nil [1004 1025])
+            ("fp" variable
+               (:pointer 1
+                :type ("FILE" type (:type "class") nil nil))
+                nil [1028 1037])
+            ("sem_mutex_crypt" variable (:type ("sem_t" type (:type "class") nil nil)) nil [1039 1061])
+            ("sem_mutex_hash" variable (:type ("sem_t" type (:type "class") nil nil)) nil [1062 1083])
+            ("sem_rw" variable (:type ("sem_t" type (:type "class") nil nil)) nil [1084 1097])
+            ("sem_put_pronta" variable (:type ("sem_t" type (:type "class") nil nil)) nil [1100 1121])
+            ("sem_put_servico" variable
+               (:dereference 1
+                :type ("sem_t" type (:type "class") nil nil))
+                nil [1122 1157])
+            ("put_threads" variable
+               (:dereference 1
+                :type ("pthread_t" type (:type "class") nil nil))
+                nil [1158 1193])
+            ("put_threads_list" variable
+               (:dereference 1
+                :type "int")
+                nil [1194 1228])
+            ("put_threads_mavail" variable
+               (:dereference 1
+                :type "int")
+                nil [1229 1265])
+            ("put_threads_buffer" variable
+               (:dereference 2
+                :type "char")
+                nil [1266 1325])
+            ("sem_get_pronta" variable (:type ("sem_t" type (:type "class") nil nil)) nil [1327 1348])
+            ("sem_get_servico" variable
+               (:dereference 1
+                :type ("sem_t" type (:type "class") nil nil))
+                nil [1349 1384])
+            ("get_threads" variable
+               (:dereference 1
+                :type ("pthread_t" type (:type "class") nil nil))
+                nil [1385 1420])
+            ("get_threads_list" variable
+               (:dereference 1
+                :type "int")
+                nil [1421 1455])
+            ("get_threads_mavail" variable
+               (:dereference 1
+                :type "int")
+                nil [1456 1492])
+            ("get_threads_buffer" variable
+               (:dereference 2
+                :type "char")
+                nil [1493 1552])
+            ("sem_teste" variable (:type ("sem_t" type (:type "class") nil nil)) nil [1554 1570])
+            ("ht" variable (:type ("ht_hashtable" type (:type "class") nil nil)) nil [1573 1589])
+            ("ctxge" variable
+               (:pointer 1
+                :type ("EVP_CIPHER_CTX" type (:type "class") nil nil))
+                nil [1591 1621])
+            ("ctxgd" variable
+               (:pointer 1
+                :type ("EVP_CIPHER_CTX" type (:type "class") nil nil))
+                nil [1591 1621])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1632 1641])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1642 1655]))                  
+                :type "int")
+                nil [1623 2909])
+            ("store" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2930 2943])
+                    ("ctxe" variable
+                       (:pointer 1
+                        :type ("EVP_CIPHER_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2944 2966]))                  
+                :type "void")
+                nil [2912 3251])
+            ("put_entries" function (:type "void") nil [3253 6899])
+            ("store_mult" function
+               (:arguments 
+                  ( ("id" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6917 6926]))                  
+                :type "void")
+                nil [6901 7543])
+            ("retrieve" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7566 7579])
+                    ("fp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7580 7589])
+                    ("ctxe" variable
+                       (:pointer 1
+                        :type ("EVP_CIPHER_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7590 7612])
+                    ("ctxde" variable
+                       (:pointer 1
+                        :type ("EVP_CIPHER_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7613 7636]))                  
+                :type "void")
+                nil [7545 8486])
+            ("retrieve_mult" function
+               (:arguments 
+                  ( ("id" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8506 8515]))                  
+                :type "void")
+                nil [8487 9241])
+            ("get_entries" function (:type "void") nil [9243 12512])
+            ("encrypt" function
+               (:arguments 
+                  ( ("ctxe" variable
+                       (:pointer 1
+                        :type ("EVP_CIPHER_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12714 12736])
+                    ("plaintext" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [12737 12762])
+                    ("plaintext_len" variable (:type "int") (reparse-symbol arg-sub-list) [12763 12781])
+                    ("ciphertext" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [12782 12808]))                  
+                :type "int")
+                nil [12702 13259])
+            ("decrypt" function
+               (:arguments 
+                  ( ("ctxd" variable
+                       (:pointer 1
+                        :type ("EVP_CIPHER_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13273 13295])
+                    ("ciphertext" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [13296 13322])
+                    ("ciphertext_len" variable (:type "int") (reparse-symbol arg-sub-list) [13323 13342])
+                    ("plaintext" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [13343 13368]))                  
+                :type "int")
+                nil [13261 13984]))          
+      :file "casanova.c"
+      :pointmax 13988
+      :fsize 14017
+      :lastmodtime '(23059 20416 211052 695000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GET_THREADS" . ((number "8" 544 . 545)))
+          ("PUT_THREADS" . ((number "8" 522 . 523)))
+          ("CRYPTEDSIZE" . ((number "16" 498 . 500)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "casanova.h"
+      :fsize 2265
+      :lastmodtime '(23059 20416 211052 695000)))
+  :file "!home!m3cool!doc!t1-ci215!src!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

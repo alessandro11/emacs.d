@@ -1,0 +1,56 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-mode
+      :tags 
+        '( ("xmldoc" variable nil nil [1 12])
+            ("txt_grr" variable nil nil [13 25])
+            ("matricula" variable (:default-value "null") nil [26 47])
+            ("loadXMLDoc" function nil nil [126 373])
+            ("GetXMLDoc" function (:arguments 
+              ( ("xml" variable nil (reparse-symbol FormalParameterList) [394 397]))              ) nil [375 429])
+            ("last_mat" variable nil nil [452 465])
+            ("parse_aluno" function (:arguments 
+              ( ("aluno" variable nil (reparse-symbol FormalParameterList) [487 492]))              ) nil [466 1994])
+            ("remove_class_situation" function nil nil [1996 2328])
+            ("btn_Click_Search" function nil nil [2330 2957])
+            ("txt_grr_KeyPress" function (:arguments 
+              ( ("event" variable nil (reparse-symbol FormalParameterList) [2985 2990]))              ) nil [2959 3081])
+            ("get_info_last_mat" function (:arguments 
+              ( ("cod_disc" variable nil (reparse-symbol FormalParameterList) [3110 3118]))              ) nil [3083 4202])
+            ("get_history" function (:arguments 
+              ( ("cod_disc" variable nil (reparse-symbol FormalParameterList) [4225 4233]))              ) nil [4204 5095])
+            ("PopUpResult" function (:arguments 
+              ( ("res" variable nil (reparse-symbol FormalParameterList) [5118 5121]))              ) nil [5097 5507])
+            ("PopUpResultHistory" function (:arguments 
+              ( ("results" variable nil (reparse-symbol FormalParameterList) [5538 5545]))              ) nil [5510 6035])
+            ("get_cod_disc" function (:arguments 
+              ( ("target" variable nil (reparse-symbol FormalParameterList) [6059 6065]))              ) nil [6037 6175])
+            ("tbl_MouseDown" function (:arguments 
+              ( ("event" variable nil (reparse-symbol FormalParameterList) [6200 6205]))              ) nil [6177 6474]))          
+      :file "xmlparser.js"
+      :pointmax 7553
+      :fsize 7560
+      :lastmodtime '(22836 55902 152618 426000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode html-mode
+      :tags 
+        '( ("Trabalho 4 - CI320" section nil nil [215 261])
+            ("Trabalho 4 - CI320" section (:members 
+              ( ("Trabalho 4 - CI320" section (:members 
+                  ( ("Visualizeitor" section (:members 
+                      ( ("Docente: Bruno Muller" section nil nil [409 450])
+                        ("Dicente: Alessandro Elias" section nil nil [450 25650]))                      ) nil [349 25650]))                  ) nil [319 25650]))              ) nil [261 25650])
+            ("" section nil nil [25650 25726]))          
+      :file "index.html"
+      :pointmax 25726
+      :fsize 26015
+      :lastmodtime '(22836 56548 662609 302000)
+      :unmatched-syntax nil))
+  :file "!home!m3cool!doc!bcc!topicos-prog-comp-ci320!trab4!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

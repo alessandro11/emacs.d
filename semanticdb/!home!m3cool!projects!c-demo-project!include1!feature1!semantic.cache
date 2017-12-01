@@ -1,0 +1,31 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("FEATURE1_H" variable (:constant-flag t) nil [28 38])
+            ("feature1_func1" function
+               (:prototype-flag t
+                :type "void")
+                nil [40 62])
+            ("feature1_func2" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [82 88]))                  
+                :type "int")
+                nil [63 89]))          
+      :file "feature1.h"
+      :pointmax 98
+      :fsize 97
+      :lastmodtime '(22791 57521 609154 59000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("FEATURE1_H")
+          )
+))
+  :file "!home!m3cool!projects!c-demo-project!include1!feature1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

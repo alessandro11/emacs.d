@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags nil
+      :file "ass.h"
+      :pointmax 23076
+      :fsize 23075
+      :lastmodtime '(22522 35642 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!ass!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

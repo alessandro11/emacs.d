@@ -1,0 +1,87 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [507 525])
+            ("MAX_DIM" variable (:constant-flag t) nil [535 542])
+            ("MAX_BOX" variable (:constant-flag t) nil [553 560])
+            ("NO_PARENT" variable (:constant-flag t) nil [577 586])
+            ("Si" variable (:constant-flag t) nil [599 601])
+            ("box" type
+               (:members 
+                  ( ("d" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [645 660])
+                    ("original_position" variable (:type "int") (reparse-symbol classsubparts) [663 685]))                  
+                :type "struct")
+                nil [622 692])
+            ("box" type
+               (:typedef ("box" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [622 692])
+            ("merge_sort_ints" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [715 722])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [723 729]))                  
+                :type "void")
+                nil [694 1109])
+            ("le_box" function
+               (:arguments 
+                  ( ("a" variable (:type ("box" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1122 1128])
+                    ("b" variable (:type ("box" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1129 1135])
+                    ("d" variable (:type "int") (reparse-symbol arg-sub-list) [1136 1142]))                  
+                :type "int")
+                nil [1111 1283])
+            ("copy_box" function
+               (:arguments 
+                  ( ("to" variable
+                       (:pointer 1
+                        :type ("box" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1299 1307])
+                    ("from" variable
+                       (:pointer 1
+                        :type ("box" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1308 1318])
+                    ("d" variable (:type "int") (reparse-symbol arg-sub-list) [1319 1325]))                  
+                :type "void")
+                nil [1285 1445])
+            ("merge_sort_boxes" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("box" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1469 1476])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [1477 1483])
+                    ("d" variable (:type "int") (reparse-symbol arg-sub-list) [1484 1490]))                  
+                :type "void")
+                nil [1447 1959])
+            ("box_fits" function
+               (:arguments 
+                  ( ("_this" variable
+                       (:pointer 1
+                        :type ("box" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1974 1985])
+                    ("into_this" variable
+                       (:pointer 1
+                        :type ("box" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1986 2001])
+                    ("d" variable (:type "int") (reparse-symbol arg-sub-list) [2002 2008]))                  
+                :type "int")
+                nil [1961 2114])
+            ("main" function (:type "int") nil [2116 3813]))          
+      :file "caixas.c"
+      :pointmax 4058
+      :fsize 4057
+      :lastmodtime '(23010 57249 660811 782000)
+      :unmatched-syntax nil))
+  :file "!home!m3cool!doc!bcc!top-algorithms-ci355-ci811!caixas!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

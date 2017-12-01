@@ -1,0 +1,120 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("graphviz/cgraph.h" include (:system-flag t) nil [1 29])
+            ("fortes.h" include nil nil [30 49])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [51 71])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [169 174]))                  
+                :type "int")
+                nil [160 303])
+            ("ReadGraph" function
+               (:arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("Agraph_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [321 333])
+                    ("V" variable
+                       (:pointer 1
+                        :type ("VertexSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [334 347]))                  
+                :type "void")
+                nil [306 596])
+            ("GetNeighborhood" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("Agraph_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [626 638])
+                    ("u" variable
+                       (:pointer 1
+                        :type ("Agnode_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [639 651]))                  
+                :type "void")
+                nil [598 946]))          
+      :file "fortes.cpp"
+      :pointmax 4189
+      :fsize 4188
+      :lastmodtime '(22854 49625 563424 355000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__FORTES_H__" variable (:constant-flag t) nil [30 42])
+            ("iostream" include (:system-flag t) nil [48 67])
+            ("string" include (:system-flag t) nil [68 85])
+            ("vector" include (:system-flag t) nil [86 103])
+            ("stack" include (:system-flag t) nil [104 120])
+            ("_NodeStatus" type
+               (:members 
+                  ( ("eVisited" variable
+                       (:constant-flag t
+                        :default-value (162 163)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [151 163])
+                    ("eNotVisited" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [167 180]))                  
+                :type "enum")
+                nil [122 192])
+            ("NodeStatus" type
+               (:typedef ("_NodeStatus" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [122 192])
+            ("__Vertex" type
+               (:members 
+                  ( ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [222 239])
+                    ("st" variable (:type ("NodeStatus" type (:type "class") nil nil)) (reparse-symbol classsubparts) [242 256])
+                    ("Neighborhood" variable (:type "int") (reparse-symbol classsubparts) [281 294]))                  
+                :type "struct")
+                nil [194 304])
+            ("Vertex" type
+               (:typedef ("__Vertex" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [194 304])
+            ("VertexSet" type
+               (:typedef ("std::vector" type
+                     (:template-specifier 
+                        ( ("Vertex" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [305 343])
+            ("ReadGraph" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("g" variable
+                       (:pointer 1
+                        :type ("Agraph_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [381 393]))                  
+                :type "void")
+                nil [366 394])
+            ("PrintVertexes" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [414 419]))                  
+                :type "void")
+                nil [395 420]))          
+      :file "fortes.h"
+      :pointmax 735
+      :fsize 734
+      :lastmodtime '(22854 43700 803507 972000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__FORTES_H__" . ((number "1" 45 . 46)))
+          )
+))
+  :file "!home!m3cool!doc!bcc!grafos-ci065!trab3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

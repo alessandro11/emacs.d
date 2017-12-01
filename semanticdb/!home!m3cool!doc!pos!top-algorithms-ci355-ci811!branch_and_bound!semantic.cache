@@ -1,0 +1,100 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__PSB_H_" variable (:constant-flag t) nil [26 34])
+            ("INT" type
+               (:typedef ("unsigned int")
+                :type "typedef")
+                nil [38 63])
+            ("BUFF_SIZE" variable (:constant-flag t) nil [73 82]))          
+      :file "psb.h"
+      :pointmax 94
+      :fsize 93
+      :lastmodtime '(23073 43769 840464 849000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BUFF_SIZE" . ((number "10" 83 . 85)))
+          ("__PSB_H_" . ((number "1" 35 . 36)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("psb.h" include nil nil [21 37])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [40 60])
+            ("ReadInput" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [76 81])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [82 87]))                  
+                :type "int")
+                nil [62 88])
+            ("PrintBuff" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [104 109])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [110 114]))                  
+                :type "void")
+                nil [89 115])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [208 217])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [218 231]))                  
+                :type "int")
+                nil [199 294])
+            ("PrintBuff" function
+               (:arguments 
+                  ( ("buff" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [311 321])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [322 331]))                  
+                :type "void")
+                nil [296 473])
+            ("ReadInput" function
+               (:arguments 
+                  ( ("buff" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [489 499])
+                    ("size" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [500 510]))                  
+                :type "int")
+                nil [475 682])
+            ("EnumSets" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [698 703]))                  
+                :type "void")
+                nil [684 708]))          
+      :file "psb.cpp"
+      :pointmax 709
+      :fsize 708
+      :lastmodtime '(23073 48980 680499 376000)
+      :unmatched-syntax nil))
+  :file "!home!m3cool!doc!pos!top-algorithms-ci355-ci811!branch_and_bound!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

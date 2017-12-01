@@ -1,7 +1,8 @@
 ;; company-c-headers
 (use-package company-c-headers
   :init
-  (add-to-list 'company-backends 'company-c-headers))
+  (add-to-list 'company-backends 'company-c-headers)
+  (add-to-list 'company-c-headers-path-system "/usr/include/c++/6.3.1/"))
 
 ;; hs-minor-mode for folding source code
 (add-hook 'c-mode-common-hook 'hs-minor-mode)

@@ -1,0 +1,143 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [123 141])
+            ("list" include (:system-flag t) nil [142 157])
+            ("stack" include (:system-flag t) nil [158 174])
+            ("NIL" variable (:constant-flag t) nil [183 186])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [190 210])
+            ("Graph" type
+               (:members 
+                  ( ("V" variable (:type "int") (reparse-symbol classsubparts) [275 281])
+                    ("adj" variable
+                       (:pointer 1
+                        :type ("list" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [308 323])
+                    ("SCCUtil" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("u" variable (:type "int") (reparse-symbol arg-sub-list) [435 441])
+                            ("disc" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [442 453])
+                            ("low" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [454 464])
+                            ("st" variable
+                               (:pointer 1
+                                :type ("stack" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [482 497])
+                            ("stackMember" variable
+                               (:dereference 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [498 517]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [422 518])
+                    ("public" label nil (reparse-symbol classsubparts) [519 526])
+                    ("Graph" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("V" variable (:type "int") (reparse-symbol arg-sub-list) [537 543]))                          
+                        :type ("Graph" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [531 544])
+                    ("addEdge" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("v" variable (:type "int") (reparse-symbol arg-sub-list) [579 585])
+                            ("w" variable (:type "int") (reparse-symbol arg-sub-list) [586 592]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [566 593])
+                    ("SCC" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [636 647]))                  
+                :type "class")
+                nil [257 693])
+            ("Graph" function
+               (:constructor-flag t
+                :parent "Graph"
+                :arguments 
+                  ( ("V" variable (:type "int") (reparse-symbol arg-sub-list) [708 714]))                  
+                :type ("Graph" type (:type "class") nil nil))
+                nil [695 763])
+            ("addEdge" function
+               (:parent "Graph"
+                :arguments 
+                  ( ("v" variable (:type "int") (reparse-symbol arg-sub-list) [785 791])
+                    ("w" variable (:type "int") (reparse-symbol arg-sub-list) [792 798]))                  
+                :type "void")
+                nil [765 827])
+            ("SCCUtil" function
+               (:parent "Graph"
+                :arguments 
+                  ( ("u" variable (:type "int") (reparse-symbol arg-sub-list) [1401 1407])
+                    ("disc" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1408 1419])
+                    ("low" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1420 1430])
+                    ("st" variable
+                       (:pointer 1
+                        :type ("stack" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1431 1446])
+                    ("stackMember" variable
+                       (:dereference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [1467 1486]))                  
+                :type "void")
+                nil [1381 3020])
+            ("SCC" function
+               (:parent "Graph"
+                :type "void")
+                nil [3077 3634])
+            ("main" function (:type "int") nil [3677 4846]))          
+      :file "fortes.cpp"
+      :pointmax 4847
+      :fsize 4846
+      :lastmodtime '(22854 50976 953405 283000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("NIL" . ((punctuation "-" 187 . 188) (number "1" 188 . 189)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("CC" variable (:default-value ("g++")) nil [1 8])
+            ("CPPFLAGS" variable (:default-value ("-std=c++11" "-Wall")) nil [9 35])
+            ("fortes" function (:arguments ("fortes.cpp")) nil [36 105])
+            ("clean" function nil nil [106 129]))          
+      :file "makefile"
+      :pointmax 129
+      :fsize 128
+      :lastmodtime '(22854 49610 833424 563000)
+      :unmatched-syntax '((shell-command 114 . 128) (bol 113 . 113))))
+  :file "!home!m3cool!doc!bcc!grafos-ci065!trab3-geeksforgeeks.org_tarjan-algorithm-find-strongly-connected-components!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

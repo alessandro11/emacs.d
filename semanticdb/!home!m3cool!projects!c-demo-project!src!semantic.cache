@@ -1,0 +1,94 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("lib1.h" include nil nil [1 18])
+            ("lib2.h" include nil nil [19 36])
+            ("feature1/feature1.h" include nil nil [37 67])
+            ("stdio.h" include (:system-flag t) nil [68 86])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [97 106])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [107 120]))                  
+                :type "int")
+                nil [88 143]))          
+      :file "main.c"
+      :pointmax 144
+      :fsize 139
+      :lastmodtime '(22792 45098 845900 571000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("feature1/feature1.h" include (:truefile "/home/m3cool/projects/c-demo-project/src/feature1.c") nil [1 31])
+            ("feature1_func1" function
+               (:type "void"
+                :truefile "/home/m3cool/projects/c-demo-project/src/feature1.c")
+                nil [33 58])
+            ("feature1_func2" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [79 85]))                  
+                :type "int"
+                :truefile "/home/m3cool/projects/c-demo-project/src/feature1.c")
+                nil [60 89]))          
+      :file "feature1.c"
+      :pointmax 90
+      :fsize 89
+      :lastmodtime '(22791 57521 609154 59000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("lib2.h" include (:truefile "/home/m3cool/projects/c-demo-project/src/lib2.c") nil [1 18])
+            ("lib2_func" function
+               (:type "void"
+                :truefile "/home/m3cool/projects/c-demo-project/src/lib2.c")
+                nil [20 40])
+            ("lib2_func" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [56 62]))                  
+                :type "int"
+                :truefile "/home/m3cool/projects/c-demo-project/src/lib2.c")
+                nil [42 65]))          
+      :file "lib2.c"
+      :pointmax 66
+      :fsize 65
+      :lastmodtime '(22791 60675 498963 380000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("lib1.h" include (:truefile "/home/m3cool/projects/c-demo-project/src/lib1.c") nil [1 18])
+            ("lib_func1" function
+               (:type "void"
+                :truefile "/home/m3cool/projects/c-demo-project/src/lib1.c")
+                nil [20 40])
+            ("lib_func2" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [56 62]))                  
+                :type "int"
+                :truefile "/home/m3cool/projects/c-demo-project/src/lib1.c")
+                nil [42 66])
+            ("lib_func3" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [82 88])
+                    ("b" variable (:type "int") (reparse-symbol arg-sub-list) [89 95]))                  
+                :type "int"
+                :truefile "/home/m3cool/projects/c-demo-project/src/lib1.c")
+                nil [68 99]))          
+      :file "lib1.c"
+      :pointmax 100
+      :fsize 99
+      :lastmodtime '(22791 60672 978963 532000)
+      :unmatched-syntax nil))
+  :file "!home!m3cool!projects!c-demo-project!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

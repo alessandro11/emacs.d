@@ -1,0 +1,292 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("graphviz/cgraph.h" include (:system-flag t) nil [492 520])
+            ("conta-caminhos.h" include nil nil [521 548])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [550 570])
+            ("VertexesById" variable (:type ("VertexSetById" type (:type "class") nil nil)) nil [572 599])
+            ("VertexesByName" variable (:type ("VertexSetByName" type (:type "class") nil nil)) nil [600 631])
+            ("Attributes" variable (:type ("AttributeSet" type (:type "class") nil nil)) nil [632 656])
+            ("GraphName" variable (:type ("string" type (:type "class") nil nil)) nil [657 674])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [772 777]))                  
+                :type "int")
+                nil [763 947])
+            ("ReadGraph" function
+               (:arguments 
+                  ( ("g" variable
+                       (:pointer 1
+                        :type ("Agraph_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [965 977]))                  
+                :type "void")
+                nil [950 1413])
+            ("GetAttributes" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("attributes" variable
+                       (:pointer 1
+                        :type ("AttributeSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1441 1466])
+                    ("g" variable
+                       (:pointer 1
+                        :type ("Agraph_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1467 1479])
+                    ("v" variable
+                       (:pointer 1
+                        :type ("Agnode_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1480 1492]))                  
+                :type "void")
+                nil [1415 1662])
+            ("GetNeighborhood" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("g" variable
+                       (:pointer 1
+                        :type ("Agraph_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1692 1704])
+                    ("u" variable
+                       (:pointer 1
+                        :type ("Agnode_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1705 1717]))                  
+                :type "void")
+                nil [1664 2015])
+            ("CountPaths" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2033 2038]))                  
+                :type "void")
+                nil [2017 2472])
+            ("Count" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("Vertex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2485 2495]))                  
+                :type "bool")
+                nil [2474 2999])
+            ("CheckChildCondition" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("Vertex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3033 3043])
+                    ("v" variable
+                       (:pointer 1
+                        :type ("Vertex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3044 3054]))                  
+                :type "bool")
+                nil [3001 3188])
+            ("GetAttributes" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("Vertex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3216 3226])
+                    ("v" variable
+                       (:pointer 1
+                        :type ("Vertex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3227 3237]))                  
+                :type "void")
+                nil [3190 3800])
+            ("PrintVertexes" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3821 3826]))                  
+                :type "void")
+                nil [3802 5005]))          
+      :file "conta-caminhos.cpp"
+      :pointmax 5006
+      :fsize 5005
+      :lastmodtime '(22799 55646 158044 30000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__CONTA_CAMINHOS_H__" variable (:constant-flag t) nil [38 58])
+            ("iostream" include (:system-flag t) nil [64 83])
+            ("string" include (:system-flag t) nil [84 101])
+            ("vector" include (:system-flag t) nil [102 119])
+            ("unordered_map" include (:system-flag t) nil [120 144])
+            ("UINT" type
+               (:typedef ("unsigned int")
+                :type "typedef")
+                nil [146 172])
+            ("VertexSet" type
+               (:typedef ("std::vector" type
+                     (:template-specifier 
+                        ( ("UINT" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [173 209])
+            ("AttributeSet" type
+               (:typedef ("std::unordered_map" type
+                     (:template-specifier 
+                        ( ("std::string" type nil nil nil)
+                          ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [210 268])
+            ("__Vertex" type
+               (:members 
+                  ( ("Id" variable (:type ("UINT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [298 306])
+                    ("OutDegree" variable (:type ("UINT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [309 324])
+                    ("Set" variable (:type "int") (reparse-symbol classsubparts) [327 335])
+                    ("Parent" variable
+                       (:pointer 1
+                        :type ("__Vertex" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [338 362])
+                    ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [365 382])
+                    ("attributes" variable (:type ("AttributeSet" type (:type "class") nil nil)) (reparse-symbol classsubparts) [385 409])
+                    ("Neighborhood" variable (:type ("VertexSet" type (:type "class") nil nil)) (reparse-symbol classsubparts) [412 435]))                  
+                :type "struct")
+                nil [270 445])
+            ("Vertex" type
+               (:typedef ("__Vertex" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [270 445])
+            ("VertexSetById" type
+               (:typedef ("std::unordered_map" type
+                     (:template-specifier 
+                        ( ("UINT" type nil nil nil)
+                          ("Vertex" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [446 501])
+            ("VertexSetByName" type
+               (:typedef ("std::unordered_map" type
+                     (:template-specifier 
+                        ( ("std::string" type nil nil nil)
+                          ("UINT" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [502 564])
+            ("ReadGraph" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("g" variable
+                       (:pointer 1
+                        :type ("Agraph_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [602 614]))                  
+                :type "void")
+                nil [587 615])
+            ("PrintVertexes" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [635 640]))                  
+                :type "void")
+                nil [616 641])
+            ("GetNeighborhood" function
+               (:prototype-flag t
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("g" variable
+                       (:pointer 1
+                        :type ("Agraph_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [670 682])
+                    ("u" variable
+                       (:pointer 1
+                        :type ("Agnode_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [683 695]))                  
+                :type "void")
+                nil [642 696])
+            ("GetAttributes" function
+               (:prototype-flag t
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("attributes" variable
+                       (:pointer 1
+                        :type ("AttributeSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [723 748])
+                    ("g" variable
+                       (:pointer 1
+                        :type ("Agraph_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [749 761])
+                    ("v" variable
+                       (:pointer 1
+                        :type ("Agnode_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [762 774]))                  
+                :type "void")
+                nil [697 775])
+            ("GetAttributes" function
+               (:prototype-flag t
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("Vertex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [802 812])
+                    ("v" variable
+                       (:pointer 1
+                        :type ("Vertex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [813 823]))                  
+                :type "void")
+                nil [776 824])
+            ("CountPaths" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [841 846]))                  
+                :type "void")
+                nil [825 847])
+            ("Count" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("Vertex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [859 869]))                  
+                :type "bool")
+                nil [848 870])
+            ("CheckChildCondition" function
+               (:prototype-flag t
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("Vertex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [903 913])
+                    ("v" variable
+                       (:pointer 1
+                        :type ("Vertex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [914 924]))                  
+                :type "bool")
+                nil [871 925]))          
+      :file "conta-caminhos.h"
+      :pointmax 959
+      :fsize 958
+      :lastmodtime '(22799 55329 848063 161000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__CONTA_CAMINHOS_H__" . ((number "1" 61 . 62)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("CC" variable (:default-value ("g++")) nil [1 8])
+            ("CPPFLAGS" variable (:default-value ("-std=c++11" "-Wall")) nil [9 35])
+            ("conta-caminhos" function (:arguments ("conta-caminhos.cpp")) nil [36 137])
+            ("clean" function nil nil [138 169]))          
+      :file "makefile"
+      :pointmax 169
+      :fsize 168
+      :lastmodtime '(22799 55329 848063 161000)
+      :unmatched-syntax '((shell-command 146 . 168) (bol 145 . 145))))
+  :file "!home!m3cool!doc!bcc!grafos-ci065!trab2!ae11!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

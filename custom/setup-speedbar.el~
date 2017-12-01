@@ -1,0 +1,1 @@
+(setq speedbar-directory-unshown-regexp "^\\.\\|GTAGS\\|GRTAGS\\|GPATH")

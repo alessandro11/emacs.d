@@ -1,0 +1,210 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("put_pronta" variable
+               (:default-value "0"
+                :type "int")
+                nil [1 20])
+            ("k" variable
+               (:pointer 1
+                :type "int")
+                nil [21 28])
+            ("sem_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sem_put_pronta" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39 54]))                  
+                :type "int")
+                nil [29 61]))          
+      :file "put.c"
+      :pointmax 411
+      :fsize 410
+      :lastmodtime '(23059 28033 831182 157000)
+      :unmatched-syntax '((semantic-list 95 . 410) (semantic-list 66 . 95) (FOR 62 . 65) (number 58 . 59) (number 55 . 56) (punctuation 38 . 39) (semantic-list 95 . 407) (semantic-list 66 . 95) (FOR 62 . 65) (number 58 . 59) (number 55 . 56) (punctuation 38 . 39) (semantic-list 115 . 478) (semantic-list 86 . 115) (FOR 82 . 85) (number 74 . 75) (number 71 . 72) (punctuation 54 . 55) (punctuation 101 . 102) (punctuation 100 . 101) (punctuation 96 . 97) (punctuation 83 . 84) (punctuation 79 . 80) (symbol 65 . 66) (number 59 . 60) (number 55 . 56) (punctuation 37 . 38) (punctuation 101 . 102) (punctuation 100 . 101) (punctuation 96 . 97) (punctuation 83 . 84) (punctuation 79 . 80) (symbol 65 . 66) (number 59 . 60) (number 55 . 56) (punctuation 37 . 38)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("sem_wait" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sem_put_pronta" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47 62]))                  
+                :type "int")
+                nil [37 63]))          
+      :file "descobre.c"
+      :pointmax 244
+      :fsize 243
+      :lastmodtime '(23059 28252 61185 866000)
+      :unmatched-syntax '((semantic-list 140 . 243) (semantic-list 112 . 140) (FOR 109 . 112) (punctuation 46 . 47)))
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("put_threads_mavail" variable
+               (:dereference 1
+                :default-value "m_avail"
+                :type "int")
+                nil [1 42]))          
+      :file "pronta.c"
+      :pointmax 143
+      :fsize 142
+      :lastmodtime '(23059 28647 271192 582000)
+      :unmatched-syntax '((semantic-list 61 . 142) (semantic-list 46 . 60) (IF 44 . 46)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("i" variable
+               (:default-value "0"
+                :type "int")
+                nil [38 44])
+            ("ac" variable
+               (:default-value "0"
+                :type "int")
+                nil [45 52])
+            ("sem_destroy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sem_put_pronta" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66 81]))                  
+                :type "int")
+                nil [53 82]))          
+      :file "join.c"
+      :pointmax 412
+      :fsize 411
+      :lastmodtime '(23059 28837 381195 813000)
+      :unmatched-syntax '((semantic-list 94 . 411) (semantic-list 88 . 93) (WHILE 83 . 88) (punctuation 65 . 66) (semantic-list 92 . 409) (semantic-list 89 . 92) (WHILE 83 . 88) (punctuation 65 . 66)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("ctxe" variable
+               (:pointer 1
+                :type ("EVP_CIPHER_CTX" type (:type "class") nil nil))
+                nil [1 22])
+            ("handleErrors" function
+               (:prototype-flag t
+                :type "int")
+                nil [58 73])
+            ("my_id" variable
+               (:default-value "*((int *) id)"
+                :type "int")
+                nil [74 100])
+            ("free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [106 109]))                  
+                :type "int")
+                nil [101 110])
+            ("n" variable (:type "int") nil [111 117])
+            ("put_threads_list" variable
+               (:dereference 1
+                :default-value "1"
+                :type "int")
+                nil [118 146])
+            ("sem_post" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sem_put_pronta" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [157 172]))                  
+                :type "int")
+                nil [147 173])
+            ("put_threads_list" variable
+               (:dereference 1
+                :default-value "-1"
+                :type "int")
+                nil [864 893])
+            ("EVP_CIPHER_CTX_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("ctxe" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [914 919]))                  
+                :type "int")
+                nil [894 920]))          
+      :file "consome.c"
+      :pointmax 921
+      :fsize 920
+      :lastmodtime '(23059 29367 921204 830000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("HT_MAX_BITS" variable (:constant-flag t) nil [9 20])
+            ("HT_MAX_SIZE" variable (:constant-flag t) nil [32 43])
+            ("ht_map_int" variable (:constant-flag t) nil [71 81])
+            ("HT_DESTROY_TH" variable (:constant-flag t) nil [129 142])
+            ("HT_INIT_TH" variable (:constant-flag t) nil [154 164])
+            ("ht_hashtable_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("count" variable (:type "unsigned int") (reparse-symbol classsubparts) [219 238])
+                          ("b" variable
+                             (:pointer 1
+                              :type ("list_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [271 281]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [169 299])
+            ("ht_hashtable" type
+               (:typedef ("ht_hashtable_t" type (:type "class") nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [301 338])
+            ("ht_init" function
+               (:prototype-flag t
+                :type ("ht_hashtable" type (:type "class") nil nil))
+                nil [440 464])
+            ("ht_insert" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [511 527])
+                    ("" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [528 544])
+                    ("" variable (:type ("ht_hashtable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [550 563]))                  
+                :type "void")
+                nil [495 564])
+            ("ht_get" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [659 675])
+                    ("" variable (:type ("ht_hashtable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [676 689]))                  
+                :type "unsigned char")
+                nil [636 690])
+            ("ht_destroy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("ht_hashtable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [760 773]))                  
+                :type "void")
+                nil [743 774]))          
+      :file "hashtable.c"
+      :pointmax 775
+      :fsize 774
+      :lastmodtime '(23059 31996 621249 505000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("HT_INIT_TH" . ((number "1" 165 . 166)))
+          ("HT_MAX_SIZE" . ((semantic-list "(1<<(HT_MAX_BITS))" 44 . 62)))
+          ("HT_DESTROY_TH" . ((number "20" 143 . 145)))
+          ("HT_MAX_BITS" . ((number "18" 21 . 23)))
+          ("ht_map_int" (spp-arg-list ("a") 81 . 84) . ((semantic-list "((a)&( ( 1<<( HT_MAX_BITS ) ) -1))" 85 . 119)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags nil
+      :file "ltGetPutFirst.c"
+      :pointmax 829
+      :fsize 788
+      :lastmodtime '(23060 32085 300017 198000)
+      :unmatched-syntax nil))
+  :file "!home!m3cool!doc!projeto!latex!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

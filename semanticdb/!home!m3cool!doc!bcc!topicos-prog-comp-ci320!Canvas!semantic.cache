@@ -1,0 +1,18 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode html-mode
+      :tags 
+        '( ("Mova o mouse" section nil nil [147 300])
+            ("" section nil nil [300 379]))          
+      :file "index.html"
+      :pointmax 379
+      :fsize 378
+      :lastmodtime '(22800 48699 849679 195000)
+      :unmatched-syntax nil))
+  :file "!home!m3cool!doc!bcc!topicos-prog-comp-ci320!Canvas!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

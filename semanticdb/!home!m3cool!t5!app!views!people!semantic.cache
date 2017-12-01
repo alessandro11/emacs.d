@@ -1,0 +1,25 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode html-mode
+      :tags 
+        '( ("Listing People" section nil nil [35 832]))          
+      :file "index.html.erb"
+      :pointmax 832
+      :fsize 831
+      :lastmodtime '(22850 18403 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode html-mode
+      :tags nil
+      :file "show.html.erb"
+      :pointmax 408
+      :fsize 407
+      :lastmodtime '(22850 18657 0 0)
+      :unmatched-syntax nil))
+  :file "!home!m3cool!t5!app!views!people!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

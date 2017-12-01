@@ -1,0 +1,59 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("thread_setup" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [21 26]))                  
+                :type "void")
+                nil [3 27])
+            ("thread_cleanup" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [48 53]))                  
+                :type "void")
+                nil [28 54]))          
+      :file "locking.h"
+      :pointmax 56
+      :fsize 55
+      :lastmodtime '(23032 53029 291120 747000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("locking.h" include nil nil [1 21])
+            ("pthread.h" include (:system-flag t) nil [23 43])
+            ("semaphore.h" include (:system-flag t) nil [44 66])
+            ("sys/ioctl.h" include (:system-flag t) nil [67 89])
+            ("openssl/conf.h" include (:system-flag t) nil [90 115])
+            ("openssl/evp.h" include (:system-flag t) nil [116 140])
+            ("openssl/err.h" include (:system-flag t) nil [141 165])
+            ("openssl/engine.h" include (:system-flag t) nil [166 193])
+            ("lock_cs" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("pthread_mutex_t" type (:type "class") nil nil))
+                nil [247 279])
+            ("thread_setup" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [433 438]))                  
+                :type "void")
+                nil [415 745])
+            ("thread_cleanup" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [767 772]))                  
+                :type "void")
+                nil [747 929]))          
+      :file "locking.c"
+      :pointmax 1271
+      :fsize 1257
+      :lastmodtime '(23057 64470 270549 930000)
+      :unmatched-syntax nil))
+  :file "!home!m3cool!doc!bcc!t1-ci215!src!src!locking!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

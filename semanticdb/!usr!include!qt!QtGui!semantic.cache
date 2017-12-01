@@ -1,0 +1,201 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("QtGui/qtguiglobal.h" include (:system-flag t) nil [1921 1951])
+            ("QACCESSIBLE_H" variable (:constant-flag t) nil [2011 2024])
+            ("QtCore/qcoreapplication.h" include (:system-flag t) nil [2026 2062])
+            ("QtCore/qdebug.h" include (:system-flag t) nil [2063 2089])
+            ("QtCore/qglobal.h" include (:system-flag t) nil [2090 2117])
+            ("QtCore/qobject.h" include (:system-flag t) nil [2118 2145])
+            ("QtCore/qrect.h" include (:system-flag t) nil [2146 2171])
+            ("QtCore/qset.h" include (:system-flag t) nil [2172 2196])
+            ("QtCore/qvector.h" include (:system-flag t) nil [2197 2224])
+            ("QtCore/qvariant.h" include (:system-flag t) nil [2225 2253])
+            ("QtGui/qcolor.h" include (:system-flag t) nil [2254 2279])
+            ("QtGui/qevent.h" include (:system-flag t) nil [2280 2305])
+            ("stdlib.h" include (:system-flag t) nil [2307 2326])
+            ("QAccessibleInterface" type
+               (:prototype t
+                :type "class")
+                nil [2348 2375])
+            ("QAccessibleEvent" type
+               (:prototype t
+                :type "class")
+                nil [2376 2399])
+            ("QWindow" type
+               (:prototype t
+                :type "class")
+                nil [2400 2414])
+            ("QTextCursor" type
+               (:prototype t
+                :type "class")
+                nil [2415 2433])
+            ("QAccessible" variable (:type ("Q_GUI_EXPORT" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [2435 15645])
+            ("==" function
+               (:prototype-flag t
+                :operator-flag t
+                :arguments 
+                  ( ("first" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QAccessible::State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15676 15708])
+                    ("second" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QAccessible::State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15709 15742]))                  
+                :type "bool")
+                nil [15660 15743])
+            ("QAccessible2Interface" type
+               (:prototype t
+                :type "class")
+                nil [15799 15827])
+            ("QAccessibleTextInterface" type
+               (:prototype t
+                :type "class")
+                nil [15828 15859])
+            ("QAccessibleEditableTextInterface" type
+               (:prototype t
+                :type "class")
+                nil [15860 15899])
+            ("QAccessibleValueInterface" type
+               (:prototype t
+                :type "class")
+                nil [15900 15932])
+            ("QAccessibleActionInterface" type
+               (:prototype t
+                :type "class")
+                nil [15933 15966])
+            ("QAccessibleImageInterface" type
+               (:prototype t
+                :type "class")
+                nil [15967 15999])
+            ("QAccessibleTableInterface" type
+               (:prototype t
+                :type "class")
+                nil [16000 16032])
+            ("QAccessibleTableCellInterface" type
+               (:prototype t
+                :type "class")
+                nil [16033 16069])
+            ("QAccessibleTableModelChangeEvent" type
+               (:prototype t
+                :type "class")
+                nil [16070 16109])
+            ("QAccessibleInterface" variable (:type ("Q_GUI_EXPORT" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [16111 18657])
+            ("QAccessibleTextInterface" variable (:type ("Q_GUI_EXPORT" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [18659 20169])
+            ("QAccessibleEditableTextInterface" variable (:type ("Q_GUI_EXPORT" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [20171 20503])
+            ("QAccessibleValueInterface" variable (:type ("Q_GUI_EXPORT" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [20505 20857])
+            ("QAccessibleTableCellInterface" variable (:type ("Q_GUI_EXPORT" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [20859 21364])
+            ("QAccessibleTableInterface" variable (:type ("Q_GUI_EXPORT" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [21366 22605])
+            ("QAccessibleActionInterface" variable (:type ("Q_GUI_EXPORT" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [22607 23590])
+            ("QAccessibleImageInterface" variable (:type ("Q_GUI_EXPORT" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [23592 23829])
+            ("QAccessibleEvent" variable (:type ("Q_GUI_EXPORT" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [23832 25813])
+            ("QAccessibleEvent" variable (:type "int") nil [25870 26526])
+            ("QAccessibleEvent" variable (:type "int") nil [26634 27329])
+            ("QAccessibleTextCursorEvent" variable (:type "int") nil [27494 28413])
+            ("QAccessibleTextCursorEvent" variable (:type "int") nil [28470 29257])
+            ("QAccessibleTextCursorEvent" variable (:type "int") nil [29314 30066])
+            ("QAccessibleTextCursorEvent" variable (:type "int") nil [30123 31085])
+            ("QAccessibleEvent" variable (:type "int") nil [31143 31786])
+            ("QAccessibleEvent" variable (:type "int") nil [31849 33469])
+            ("QAccessibleInterface_iid" variable (:constant-flag t) nil [33479 33503])
+            ("qAccessibleRoleString" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("role" variable (:type ("QAccessible::Role" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33661 33684]))                  
+                :type "char")
+                nil [33627 33685])
+            ("qAccessibleEventString" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("event" variable (:type ("QAccessible::Event" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33734 33759]))                  
+                :type "char")
+                nil [33699 33760])
+            ("qAccessibleLocalizedActionDescription" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("actionName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33820 33846]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [33774 33847])
+            ("<<" function
+               (:prototype-flag t
+                :operator-flag t
+                :arguments 
+                  ( ("d" variable (:type ("QDebug" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33907 33916])
+                    ("iface" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("QAccessibleInterface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33917 33951]))                  
+                :type ("QDebug" type (:type "class") nil nil))
+                nil [33889 33952])
+            ("<<" function
+               (:prototype-flag t
+                :operator-flag t
+                :arguments 
+                  ( ("d" variable (:type ("QDebug" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33984 33993])
+                    ("ev" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QAccessibleEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33994 34021]))                  
+                :type ("QDebug" type (:type "class") nil nil))
+                nil [33966 34022]))          
+      :file "qaccessible.h"
+      :pointmax 34350
+      :fsize 34349
+      :lastmodtime '(22655 31178 0 0)
+      :unmatched-syntax '((symbol 34278 . 34294) (symbol 33953 . 33965) (symbol 33876 . 33888) (symbol 33761 . 33773) (symbol 33686 . 33698) (symbol 33614 . 33626) (semantic-list 33564 . 33612) (symbol 33545 . 33564) (string "\"org.qt-project.Qt.QAccessibleInterface\"" 33587 . 33611) (PUBLIC 31842 . 31848) (punctuation 31840 . 31841) (symbol 31807 . 31839) (symbol 31794 . 31806) (CLASS 31788 . 31793) (PUBLIC 31136 . 31142) (punctuation 31134 . 31135) (symbol 31106 . 31133) (symbol 31093 . 31105) (CLASS 31087 . 31092) (PUBLIC 30116 . 30122) (punctuation 30114 . 30115) (symbol 30087 . 30113) (symbol 30074 . 30086) (CLASS 30068 . 30073) (PUBLIC 29307 . 29313) (punctuation 29305 . 29306) (symbol 29278 . 29304) (symbol 29265 . 29277) (CLASS 29259 . 29264) (PUBLIC 28463 . 28469) (punctuation 28461 . 28462) (symbol 28434 . 28460) (symbol 28421 . 28433) (CLASS 28415 . 28420) (PUBLIC 27487 . 27493) (punctuation 27485 . 27486) (symbol 27455 . 27484) (symbol 27442 . 27454) (CLASS 27436 . 27441) (PUBLIC 26627 . 26633) (punctuation 26625 . 26626) (symbol 26598 . 26624) (symbol 26585 . 26597) (CLASS 26579 . 26584) (PUBLIC 25863 . 25869) (punctuation 25862 . 25863) (symbol 25834 . 25861) (symbol 25821 . 25833) (CLASS 25815 . 25820) (semantic-list 15774 . 15797) (symbol 15745 . 15774) (symbol 15647 . 15659) (symbol 2328 . 2346))
+      :lexical-table 
+        '(("QACCESSIBLE_H")
+          ("QAccessibleInterface_iid" . ((string "\"org.qt-project.Qt.QAccessibleInterface\"" 33504 . 33544)))
+          )
+))
+  :file "!usr!include!qt!QtGui!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

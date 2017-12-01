@@ -1,0 +1,17 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode html-mode
+      :tags 
+        '( ("Log in" section nil nil [33 686]))          
+      :file "new.html.erb"
+      :pointmax 686
+      :fsize 685
+      :lastmodtime '(22848 48771 0 0)
+      :unmatched-syntax nil))
+  :file "!home!m3cool!t5!app!views!sessions!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

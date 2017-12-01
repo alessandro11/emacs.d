@@ -1,0 +1,1150 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_ATKMM_TEXT_H" variable (:constant-flag t) nil [80 93])
+            ("glibmm/ustring.h" include (:system-flag t) nil [96 123])
+            ("sigc++/sigc++.h" include (:system-flag t) nil [124 150])
+            ("atkmm/component.h" include (:system-flag t) nil [990 1018])
+            ("glibmm/slisthandle.h" include (:system-flag t) nil [1044 1075])
+            ("atk/atktext.h" include (:system-flag t) nil [1076 1100])
+            ("_AtkText" type
+               (:prototype t
+                :type "struct")
+                nil [1152 1168])
+            ("_AtkTextClass" type
+               (:prototype t
+                :type "struct")
+                nil [1190 1211])
+            ("Atk" type
+               (:members 
+                  ( ("Text_Class" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1301 1318]))                  
+                :type "namespace")
+                nil [1285 1320])
+            ("Atk" type
+               (:members 
+                  ( ("Attribute" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1411 1418])
+                            ("CppObjectType" variable
+                               (:default-value "Attribute"
+                                :type "int")
+                                (reparse-symbol classsubparts) [1460 1486])
+                            ("BaseObjectType" variable
+                               (:default-value "AtkAttribute"
+                                :type "int")
+                                (reparse-symbol classsubparts) [1495 1525])
+                            ("private" label nil (reparse-symbol classsubparts) [1565 1573])
+                            ("public" label nil (reparse-symbol classsubparts) [1576 1583])
+                            ("Attribute" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("Attribute" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1586 1598])
+                            ("Attribute" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Glib::ustring" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1611 1637])
+                                    ("value" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Glib::ustring" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1638 1665]))                                  
+                                :type ("Attribute" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1601 1666])
+                            ("Attribute" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("gobject" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("AtkAttribute" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1688 1716]))                                  
+                                :type ("Attribute" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1678 1717])
+                            ("Attribute" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [1720 1733])
+                            ("Attribute" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Attribute" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1747 1770]))                                  
+                                :type ("Attribute" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1737 1771])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Attribute" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1795 1818]))                                  
+                                :type ("Attribute" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1774 1819])
+                            ("swap" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :type ("Attribute" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1833 1850]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1823 1851])
+                            ("get_name" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("Glib::ustring" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1855 1886])
+                            ("get_value" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("Glib::ustring" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1889 1921])
+                            ("gobj" function
+                               (:pointer 1
+                                :type ("AtkAttribute" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1976 2030])
+                            ("gobj" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :constant-flag t
+                                :type ("AtkAttribute" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2085 2139])
+                            ("protected" label nil (reparse-symbol classsubparts) [2141 2151])
+                            ("gobject_" variable (:type ("AtkAttribute" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2154 2176]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1391 2181])
+                    ("swap" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :type ("Attribute" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2231 2246])
+                            ("rhs" variable
+                               (:reference 1
+                                :type ("Attribute" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2247 2262]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2214 2283])
+                    ("AttributeTraits" type
+                       (:members 
+                          ( ("CppType" type
+                               (:typedef ("Atk::Attribute" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2312 2348])
+                            ("CType" type
+                               (:typedef ("AtkAttribute" type (:type "class") nil nil)
+                                :pointer 1
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2351 2385])
+                            ("CTypeNonConst" type
+                               (:typedef ("AtkAttribute" type (:type "class") nil nil)
+                                :pointer 1
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2388 2430])
+                            ("to_c_type" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("item" variable (:type ("CType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2457 2468]))                                  
+                                :type ("CType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2434 2494])
+                            ("to_c_type" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("item" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CppType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2520 2540]))                                  
+                                :type ("CType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2497 2564])
+                            ("to_cpp_type" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("item" variable (:type ("CType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2594 2605]))                                  
+                                :type ("CppType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2567 2636])
+                            ("release_c_type" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("item" variable (:type ("CType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2666 2677]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2639 2727]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2285 2730])
+                    ("AttributeSet" type
+                       (:typedef ("Glib::SListHandle" type
+                             (:template-specifier 
+                                ( ("Attribute" type nil nil nil)
+                                  ("AttributeTraits" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2732 2799])
+                    ("BuiltinTextAttribute" type
+                       (:members 
+                          ( ("TEXT_ATTR_INVALID" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6714 6732])
+                            ("TEXT_ATTR_LEFT_MARGIN" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6735 6757])
+                            ("TEXT_ATTR_RIGHT_MARGIN" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6760 6783])
+                            ("TEXT_ATTR_INDENT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6786 6803])
+                            ("TEXT_ATTR_INVISIBLE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6806 6826])
+                            ("TEXT_ATTR_EDITABLE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6829 6848])
+                            ("TEXT_ATTR_PIXELS_ABOVE_LINES" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6851 6880])
+                            ("TEXT_ATTR_PIXELS_BELOW_LINES" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6883 6912])
+                            ("TEXT_ATTR_PIXELS_INSIDE_WRAP" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6915 6944])
+                            ("TEXT_ATTR_BG_FULL_HEIGHT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6947 6972])
+                            ("TEXT_ATTR_RISE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6975 6990])
+                            ("TEXT_ATTR_UNDERLINE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6993 7013])
+                            ("TEXT_ATTR_STRIKETHROUGH" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7016 7040])
+                            ("TEXT_ATTR_SIZE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7043 7058])
+                            ("TEXT_ATTR_SCALE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7061 7077])
+                            ("TEXT_ATTR_WEIGHT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7080 7097])
+                            ("TEXT_ATTR_LANGUAGE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7100 7119])
+                            ("TEXT_ATTR_FAMILY_NAME" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7122 7144])
+                            ("TEXT_ATTR_BG_COLOR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7147 7166])
+                            ("TEXT_ATTR_FG_COLOR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7169 7188])
+                            ("TEXT_ATTR_BG_STIPPLE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7191 7212])
+                            ("TEXT_ATTR_FG_STIPPLE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7215 7236])
+                            ("TEXT_ATTR_WRAP_MODE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7239 7259])
+                            ("TEXT_ATTR_DIRECTION" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7262 7282])
+                            ("TEXT_ATTR_JUSTIFICATION" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7285 7309])
+                            ("TEXT_ATTR_STRETCH" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7312 7330])
+                            ("TEXT_ATTR_VARIANT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7333 7351])
+                            ("TEXT_ATTR_STYLE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7354 7370])
+                            ("TEXT_ATTR_LAST_DEFINED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7373 7397]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [6684 7398]))                  
+                :type "namespace")
+                nil [1374 7401])
+            ("Glib" type
+               (:members 
+                  ( ("Value" type
+                       (:type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [7577 7584])
+                            ("G_GNUC_CONST" variable (:type "int") (reparse-symbol classsubparts) [7613 7626]))                          
+                        :superclasses 
+                          ( ("Glib::Value_Enum" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :template-specifier 
+                          ( ("Atk::BuiltinTextAttribute" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [7471 7629]))                  
+                :type "namespace")
+                nil [7453 7632])
+            ("Atk" type
+               (:members 
+                  ( ("TextAttribute" type
+                       (:members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [7730 7738])
+                            ("attribute_" variable (:type "int") (reparse-symbol classsubparts) [7741 7756])
+                            ("public" label nil (reparse-symbol classsubparts) [7758 7765])
+                            ("TextAttribute" function
+                               (:constructor-flag t
+                                :type ("TextAttribute" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7768 7803])
+                            ("TextAttribute" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("attribute" variable (:type ("BuiltinTextAttribute" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7820 7851]))                                  
+                                :type ("TextAttribute" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7806 7879])
+                            ("TextAttribute" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("attribute" variable (:type "int") (reparse-symbol arg-sub-list) [7941 7955]))                                  
+                                :type ("TextAttribute" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7927 7983])
+                            ("for_name" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Glib::ustring" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8063 8089]))                                  
+                                :type ("TextAttribute" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8033 8090])
+                            ("get_name" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("attribute" variable (:type ("TextAttribute" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8123 8147]))                                  
+                                :type ("Glib::ustring" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8093 8148])
+                            ("get_value" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("attribute" variable (:type ("TextAttribute" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8182 8206])
+                                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [8207 8217]))                                  
+                                :type ("Glib::ustring" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8151 8218]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [7708 8221]))                  
+                :type "namespace")
+                nil [7690 8224])
+            ("Glib" type
+               (:members 
+                  ( ("Value" type
+                       (:type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [8386 8393])
+                            ("G_GNUC_CONST" variable (:type "int") (reparse-symbol classsubparts) [8422 8435]))                          
+                        :superclasses 
+                          ( ("Glib::Value_Enum" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :template-specifier 
+                          ( ("Atk::TextAttribute" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [8294 8438]))                  
+                :type "namespace")
+                nil [8276 8441])
+            ("Atk" type
+               (:members 
+                  ( ("TextBoundary" type
+                       (:members 
+                          ( ("TEXT_BOUNDARY_CHAR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9825 9844])
+                            ("TEXT_BOUNDARY_WORD_START" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9847 9872])
+                            ("TEXT_BOUNDARY_WORD_END" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9875 9898])
+                            ("TEXT_BOUNDARY_SENTENCE_START" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9901 9930])
+                            ("TEXT_BOUNDARY_SENTENCE_END" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9933 9960])
+                            ("TEXT_BOUNDARY_LINE_START" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9963 9988])
+                            ("TEXT_BOUNDARY_LINE_END" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9991 10015]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [9803 10016]))                  
+                :type "namespace")
+                nil [8499 10019])
+            ("Glib" type
+               (:members 
+                  ( ("Value" type
+                       (:type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [10179 10186])
+                            ("G_GNUC_CONST" variable (:type "int") (reparse-symbol classsubparts) [10215 10228]))                          
+                        :superclasses 
+                          ( ("Glib::Value_Enum" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :template-specifier 
+                          ( ("Atk::TextBoundary" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [10089 10231]))                  
+                :type "namespace")
+                nil [10071 10234])
+            ("Atk" type
+               (:members 
+                  ( ("TextClipType" type
+                       (:members 
+                          ( ("TEXT_CLIP_NONE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10771 10786])
+                            ("TEXT_CLIP_MIN" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10789 10803])
+                            ("TEXT_CLIP_MAX" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10806 10820])
+                            ("TEXT_CLIP_BOTH" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10823 10839]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [10749 10840]))                  
+                :type "namespace")
+                nil [10292 10843])
+            ("Glib" type
+               (:members 
+                  ( ("Value" type
+                       (:type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [11003 11010])
+                            ("G_GNUC_CONST" variable (:type "int") (reparse-symbol classsubparts) [11039 11052]))                          
+                        :superclasses 
+                          ( ("Glib::Value_Enum" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :template-specifier 
+                          ( ("Atk::TextClipType" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [10913 11055]))                  
+                :type "namespace")
+                nil [10895 11058])
+            ("Atk" type
+               (:members 
+                  ( ("TextGranularity" type
+                       (:members 
+                          ( ("TEXT_GRANULARITY_CHAR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12405 12427])
+                            ("TEXT_GRANULARITY_WORD" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12430 12452])
+                            ("TEXT_GRANULARITY_SENTENCE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12455 12481])
+                            ("TEXT_GRANULARITY_LINE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12484 12506])
+                            ("TEXT_GRANULARITY_PARAGRAPH" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12509 12537]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [12380 12538]))                  
+                :type "namespace")
+                nil [11116 12541])
+            ("Glib" type
+               (:members 
+                  ( ("Value" type
+                       (:type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [12707 12714])
+                            ("G_GNUC_CONST" variable (:type "int") (reparse-symbol classsubparts) [12743 12756]))                          
+                        :superclasses 
+                          ( ("Glib::Value_Enum" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :template-specifier 
+                          ( ("Atk::TextGranularity" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [12611 12759]))                  
+                :type "namespace")
+                nil [12593 12762])
+            ("Atk" type
+               (:members 
+                  ( ("Text" type
+                       (:superclasses 
+                          ( ("Glib::Interface" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [14086 14093])
+                            ("CppObjectType" variable
+                               (:default-value "Text"
+                                :type "int")
+                                (reparse-symbol classsubparts) [14102 14123])
+                            ("CppClassType" variable
+                               (:default-value "Text_Class"
+                                :type "int")
+                                (reparse-symbol classsubparts) [14132 14158])
+                            ("BaseObjectType" variable
+                               (:default-value "AtkText"
+                                :type "int")
+                                (reparse-symbol classsubparts) [14167 14192])
+                            ("BaseClassType" variable
+                               (:default-value "AtkTextIface"
+                                :type "int")
+                                (reparse-symbol classsubparts) [14201 14230])
+                            ("private" label nil (reparse-symbol classsubparts) [14321 14329])
+                            ("Text_Class" friend nil (reparse-symbol classsubparts) [14332 14355])
+                            ("text_class_" variable
+                               (:typemodifiers ("static")
+                                :type ("CppClassType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14359 14391])
+                            ("protected" label nil (reparse-symbol classsubparts) [14431 14441])
+                            ("Text" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("Text" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14506 14513])
+                            ("Text" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("interface_class" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Glib::Interface_Class" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14792 14837]))                                  
+                                :type ("Text" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14787 14838])
+                            ("public" label nil (reparse-symbol classsubparts) [14840 14847])
+                            ("Text" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("castitem" variable
+                                       (:pointer 1
+                                        :type ("AtkText" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15041 15059]))                                  
+                                :type ("Text" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15036 15060])
+                            ("protected" label nil (reparse-symbol classsubparts) [15062 15072])
+                            ("public" label nil (reparse-symbol classsubparts) [15112 15119])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [15140 15149])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [15180 15189])
+                            ("override" variable (:type ("noexcept" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15201 15219])
+                            ("add_interface" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("gtype_implementer" variable (:type ("GType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15249 15273]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [15223 15274])
+                            ("G_GNUC_CONST" variable (:type "int") (reparse-symbol classsubparts) [15398 15411])
+                            ("G_GNUC_CONST" variable (:type "int") (reparse-symbol classsubparts) [15477 15490])
+                            ("gobj" function
+                               (:pointer 1
+                                :type ("AtkText" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15551 15627])
+                            ("gobj" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :constant-flag t
+                                :type ("AtkText" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15681 15757])
+                            ("private" label nil (reparse-symbol classsubparts) [15759 15767])
+                            ("public" label nil (reparse-symbol classsubparts) [15770 15777])
+                            ("get_text" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("start_offset" variable (:type "int") (reparse-symbol arg-sub-list) [16084 16101])
+                                    ("end_offset" variable (:type "int") (reparse-symbol arg-sub-list) [16102 16117]))                                  
+                                :type ("Glib::ustring" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16061 16124])
+                            ("get_character_at_offset" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset" variable (:type "int") (reparse-symbol arg-sub-list) [16276 16287]))                                  
+                                :type ("gunichar" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16243 16294])
+                            ("get_text_after_offset" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset" variable (:type "int") (reparse-symbol arg-sub-list) [16902 16913])
+                                    ("boundary_type" variable (:type ("TextBoundary" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16914 16941])
+                                    ("start_offset" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [16942 16960])
+                                    ("end_offset" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [16961 16977]))                                  
+                                :type ("Glib::ustring" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16866 16984])
+                            ("get_text_at_offset" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset" variable (:type "int") (reparse-symbol arg-sub-list) [18708 18719])
+                                    ("boundary_type" variable (:type ("TextBoundary" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18720 18747])
+                                    ("start_offset" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [18748 18766])
+                                    ("end_offset" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [18767 18783]))                                  
+                                :type ("Glib::ustring" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [18675 18790])
+                            ("get_text_before_offset" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset" variable (:type "int") (reparse-symbol arg-sub-list) [19434 19445])
+                                    ("boundary_type" variable (:type ("TextBoundary" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19446 19473])
+                                    ("start_offset" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [19474 19492])
+                                    ("end_offset" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [19493 19509]))                                  
+                                :type ("Glib::ustring" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [19397 19516])
+                            ("get_string_at_offset" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("offset" variable (:type "int") (reparse-symbol arg-sub-list) [21672 21683])
+                                    ("granularity" variable (:type ("TextGranularity" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21684 21712])
+                                    ("start_offset" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [21713 21731])
+                                    ("end_offset" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [21732 21748]))                                  
+                                :type ("Glib::ustring" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [21637 21749])
+                            ("get_caret_offset" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [21878 21907])
+                            ("get_character_extents" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset" variable (:type "int") (reparse-symbol arg-sub-list) [22500 22511])
+                                    ("x" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [22512 22519])
+                                    ("y" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [22520 22527])
+                                    ("width" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [22528 22539])
+                                    ("height" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [22540 22552])
+                                    ("coords" variable (:type ("CoordType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22553 22570]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [22473 22577])
+                            ("get_run_attributes" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset" variable (:type "int") (reparse-symbol arg-sub-list) [23334 23345])
+                                    ("start_offset" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [23346 23364])
+                                    ("end_offset" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [23365 23381]))                                  
+                                :type ("AttributeSet" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [23302 23388])
+                            ("get_default_attributes" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("AttributeSet" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [23753 23797])
+                            ("get_character_count" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [23886 23918])
+                            ("get_offset_at_point" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [24453 24459])
+                                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [24460 24466])
+                                    ("coords" variable (:type ("CoordType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24467 24484]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [24429 24491])
+                            ("get_n_selections" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [24631 24660])
+                            ("get_selection" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("selection_num" variable (:type "int") (reparse-symbol arg-sub-list) [25374 25392])
+                                    ("start_offset" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [25393 25411])
+                                    ("end_offset" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [25412 25428]))                                  
+                                :type ("Glib::ustring" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [25346 25435])
+                            ("add_selection" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("start_offset" variable (:type "int") (reparse-symbol arg-sub-list) [25746 25763])
+                                    ("end_offset" variable (:type "int") (reparse-symbol arg-sub-list) [25764 25779]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [25727 25780])
+                            ("remove_selection" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("selection_num" variable (:type "int") (reparse-symbol arg-sub-list) [26282 26300]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [26260 26301])
+                            ("set_selection" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("selection_num" variable (:type "int") (reparse-symbol arg-sub-list) [26993 27011])
+                                    ("start_offset" variable (:type "int") (reparse-symbol arg-sub-list) [27012 27029])
+                                    ("end_offset" variable (:type "int") (reparse-symbol arg-sub-list) [27030 27045]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [26974 27046])
+                            ("set_caret_offset" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("offset" variable (:type "int") (reparse-symbol arg-sub-list) [27247 27258]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [27225 27259])
+                            ("Rectangle" type
+                               (:typedef ("AtkTextRectangle" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [27265 27300])
+                            ("get_range_extents" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("start_offset" variable (:type "int") (reparse-symbol arg-sub-list) [27860 27877])
+                                    ("end_offset" variable (:type "int") (reparse-symbol arg-sub-list) [27878 27893])
+                                    ("coord_type" variable (:type ("CoordType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27894 27915])
+                                    ("rect" variable
+                                       (:reference 1
+                                        :type ("Rectangle" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [27916 27932]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [27837 27933])
+                            ("get_bounded_ranges" function
+                               (:prototype-flag t
+                                :pointer 2
+                                :arguments 
+                                  ( ("rect" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Rectangle" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [28481 28503])
+                                    ("coord_type" variable (:type ("CoordType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28504 28525])
+                                    ("x_clip_type" variable (:type ("TextClipType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28526 28551])
+                                    ("y_clip_type" variable (:type ("TextClipType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28552 28577]))                                  
+                                :type ("AtkTextRange" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [28447 28578])
+                            ("signal_text_changed" function
+                               (:prototype-flag t
+                                :type ("Glib::SignalProxy" type
+                                     (:template-specifier 
+                                        ( ("void" type nil nil nil)
+                                          ("int" type nil nil nil)
+                                          ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [29313 29369])
+                            ("signal_text_caret_moved" function
+                               (:prototype-flag t
+                                :type ("Glib::SignalProxy" type
+                                     (:template-specifier 
+                                        ( ("void" type nil nil nil)
+                                          ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [29679 29735])
+                            ("signal_text_selection_changed" function
+                               (:prototype-flag t
+                                :type ("Glib::SignalProxy" type
+                                     (:template-specifier 
+                                        ( ("void" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [29964 30022])
+                            ("signal_text_attributes_changed" function
+                               (:prototype-flag t
+                                :type ("Glib::SignalProxy" type
+                                     (:template-specifier 
+                                        ( ("void" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [30272 30331])
+                            ("protected" label nil (reparse-symbol classsubparts) [30334 30344])
+                            ("get_text_vfunc" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("start_offset" variable (:type "int") (reparse-symbol arg-sub-list) [30389 30406])
+                                    ("end_offset" variable (:type "int") (reparse-symbol arg-sub-list) [30407 30422]))                                  
+                                :type ("Glib::ustring" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [30352 30429])
+                            ("get_character_at_offset_vfunc" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("offset" variable (:type "int") (reparse-symbol arg-sub-list) [30482 30493]))                                  
+                                :type ("gunichar" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [30435 30500])
+                            ("get_text_after_offset_vfunc" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("offset" variable (:type "int") (reparse-symbol arg-sub-list) [30650 30661])
+                                    ("boundary_type" variable (:type ("TextBoundary" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30662 30689])
+                                    ("start_offset" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [30690 30708])
+                                    ("end_offset" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [30709 30725]))                                  
+                                :type ("Glib::ustring" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [30600 30732])
+                            ("get_text_at_offset_vfunc" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("offset" variable (:type "int") (reparse-symbol arg-sub-list) [30786 30797])
+                                    ("boundary_type" variable (:type ("TextBoundary" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30798 30825])
+                                    ("start_offset" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [30826 30844])
+                                    ("end_offset" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [30845 30861]))                                  
+                                :type ("Glib::ustring" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [30739 30868])
+                            ("get_text_before_offset_vfunc" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("offset" variable (:type "int") (reparse-symbol arg-sub-list) [31019 31030])
+                                    ("boundary_type" variable (:type ("TextBoundary" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31031 31058])
+                                    ("start_offset" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [31059 31077])
+                                    ("end_offset" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [31078 31094]))                                  
+                                :type ("Glib::ustring" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [30968 31101])
+                            ("get_caret_offset_vfunc" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol classsubparts) [31108 31151])
+                            ("get_character_extents_vfunc" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("offset" variable (:type "int") (reparse-symbol arg-sub-list) [31198 31209])
+                                    ("x" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [31210 31217])
+                                    ("y" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [31218 31225])
+                                    ("width" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [31226 31237])
+                                    ("height" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [31238 31250])
+                                    ("coords" variable (:type ("CoordType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31251 31268]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [31157 31275])
+                            ("get_run_attributes_vfunc" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("offset" variable (:type "int") (reparse-symbol arg-sub-list) [31331 31342])
+                                    ("start_offset" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [31343 31361])
+                                    ("end_offset" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [31362 31378]))                                  
+                                :type ("AtkAttributeSet" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [31281 31385])
+                            ("get_default_attributes_vfunc" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :type ("AtkAttributeSet" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [31391 31453])
+                            ("get_character_count_vfunc" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol classsubparts) [31459 31505])
+                            ("get_offset_at_point_vfunc" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [31549 31555])
+                                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [31556 31562])
+                                    ("coords" variable (:type ("CoordType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31563 31580]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [31511 31587])
+                            ("get_n_selections_vfunc" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol classsubparts) [31593 31636])
+                            ("get_selection_vfunc" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("selection_num" variable (:type "int") (reparse-symbol arg-sub-list) [31684 31702])
+                                    ("start_offset" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [31703 31721])
+                                    ("end_offset" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [31722 31738]))                                  
+                                :type ("Glib::ustring" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [31642 31745])
+                            ("add_selection_vfunc" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("start_offset" variable (:type "int") (reparse-symbol arg-sub-list) [31784 31801])
+                                    ("end_offset" variable (:type "int") (reparse-symbol arg-sub-list) [31802 31817]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [31751 31818])
+                            ("remove_selection_vfunc" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("selection_num" variable (:type "int") (reparse-symbol arg-sub-list) [31860 31878]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [31824 31879])
+                            ("set_selection_vfunc" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("selection_num" variable (:type "int") (reparse-symbol arg-sub-list) [31918 31936])
+                                    ("start_offset" variable (:type "int") (reparse-symbol arg-sub-list) [31937 31954])
+                                    ("end_offset" variable (:type "int") (reparse-symbol arg-sub-list) [31955 31970]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [31885 31971])
+                            ("set_caret_offset_vfunc" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("offset" variable (:type "int") (reparse-symbol arg-sub-list) [32013 32024]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [31977 32025])
+                            ("public" label nil (reparse-symbol classsubparts) [32122 32129])
+                            ("public" label nil (reparse-symbol classsubparts) [32131 32138])
+                            ("protected" label nil (reparse-symbol classsubparts) [32195 32205])
+                            ("on_text_changed" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("position" variable (:type "int") (reparse-symbol arg-sub-list) [32403 32416])
+                                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [32417 32428]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [32374 32429])
+                            ("on_text_caret_moved" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("location" variable (:type "int") (reparse-symbol arg-sub-list) [32539 32552]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [32506 32553])
+                            ("on_text_selection_changed" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [32636 32677])
+                            ("on_text_attributes_changed" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [32761 32803]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [14011 32808]))                  
+                :type "namespace")
+                nil [12820 32811])
+            ("Glib" type
+               (:members 
+                  ( ("wrap" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("object" variable
+                               (:pointer 1
+                                :type ("AtkText" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [33180 33196])
+                            ("take_copy" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [33197 33219]))                          
+                        :type ("Glib::RefPtr" type
+                             (:template-specifier 
+                                ( ("Atk::Text" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [33151 33221]))                  
+                :type "namespace")
+                nil [32831 33224]))          
+      :file "text.h"
+      :pointmax 33273
+      :fsize 33272
+      :lastmodtime '(22555 16488 0 0)
+      :unmatched-syntax '((semantic-list 15474 . 15476) (symbol 15461 . 15474) (symbol 15455 . 15460) (STATIC 15448 . 15454) (semantic-list 15390 . 15392) (symbol 15382 . 15390) (symbol 15376 . 15381) (STATIC 15369 . 15375) (semantic-list 15198 . 15200) (symbol 15194 . 15198) (punctuation 15193 . 15194) (semantic-list 15167 . 15179) (punctuation 15166 . 15167) (OPERATOR 15158 . 15166) (punctuation 15173 . 15174) (punctuation 15156 . 15157) (symbol 15152 . 15156) (punctuation 15173 . 15174) (semantic-list 15127 . 15139) (symbol 15123 . 15127) (punctuation 15133 . 15134) (EXPLICIT 15027 . 15035) (EXPLICIT 14778 . 14786) (punctuation 14355 . 14356) (punctuation 14318 . 14319) (DELETE 14312 . 14318) (punctuation 14310 . 14311) (semantic-list 14296 . 14309) (punctuation 14295 . 14296) (OPERATOR 14287 . 14295) (punctuation 14285 . 14286) (symbol 14281 . 14285) (punctuation 14277 . 14278) (DELETE 14271 . 14277) (punctuation 14269 . 14270) (semantic-list 14255 . 14268) (symbol 14251 . 14255) (USING 14195 . 14200) (USING 14161 . 14166) (USING 14126 . 14131) (USING 14096 . 14101) (semantic-list 12740 . 12742) (symbol 12730 . 12740) (symbol 12724 . 12729) (STATIC 12717 . 12723) (semantic-list 11036 . 11038) (symbol 11026 . 11036) (symbol 11020 . 11025) (STATIC 11013 . 11019) (semantic-list 10212 . 10214) (symbol 10202 . 10212) (symbol 10196 . 10201) (STATIC 10189 . 10195) (semantic-list 8419 . 8421) (symbol 8409 . 8419) (symbol 8403 . 8408) (STATIC 8396 . 8402) (semantic-list 8007 . 8029) (CONST 8001 . 8006) (semantic-list 7998 . 8000) (INT 7995 . 7998) (OPERATOR 7986 . 7994) (EXPLICIT 7918 . 7926) (semantic-list 7610 . 7612) (symbol 7600 . 7610) (symbol 7594 . 7599) (STATIC 7587 . 7593) (EXPLICIT 1669 . 1677) (USING 1489 . 1494) (USING 1454 . 1459) (USING 1169 . 1174) (USING 1136 . 1141))
+      :lexical-table 
+        '(("_ATKMM_TEXT_H")
+          )
+))
+  :file "!usr!include!atkmm-1.6!atkmm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

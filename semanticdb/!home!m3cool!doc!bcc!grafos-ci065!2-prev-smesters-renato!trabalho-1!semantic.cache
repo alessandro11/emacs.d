@@ -1,0 +1,633 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("malloc.h" include (:system-flag t) nil [473 492])
+            ("grafo.h" include nil nil [493 511])
+            ("lista" type
+               (:typedef ("lista" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [629 657])
+            ("no" type
+               (:typedef ("no" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [807 829])
+            ("tamanho_lista" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("l" variable (:type ("lista" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [977 985]))                  
+                :type "unsigned int")
+                nil [950 986])
+            ("primeiro_no" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("l" variable (:type ("lista" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1151 1159]))                  
+                :type ("no" type (:type "class") nil nil))
+                nil [1136 1160])
+            ("proximo_no" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("n" variable (:type ("no" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1335 1340]))                  
+                :type ("no" type (:type "class") nil nil))
+                nil [1321 1341])
+            ("conteudo" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("n" variable (:type ("no" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1497 1502]))                  
+                :type "void")
+                nil [1482 1503])
+            ("insere_lista" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("conteudo" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1717 1732])
+                    ("l" variable (:type ("lista" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1733 1741]))                  
+                :type ("no" type (:type "class") nil nil))
+                nil [1701 1742])
+            ("constroi_lista" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1918 1923]))                  
+                :type ("lista" type (:type "class") nil nil))
+                nil [1897 1924])
+            ("destroi_lista" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("l" variable (:type ("lista" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2226 2234])
+                    ("destroi" variable (:type "int") (reparse-symbol arg-sub-list) [2235 2254]))                  
+                :type "int")
+                nil [2208 2256])
+            ("remove_no" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("l" variable
+                       (:pointer 1
+                        :type ("lista" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2516 2532])
+                    ("rno" variable
+                       (:pointer 1
+                        :type ("no" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2533 2548])
+                    ("destroi" variable (:type "int") (reparse-symbol arg-sub-list) [2549 2568]))                  
+                :type "int")
+                nil [2502 2570])
+            ("graphviz/cgraph.h" include (:system-flag t) nil [2680 2708])
+            ("_XOPEN_SOURCE" variable (:constant-flag t) nil [2717 2730])
+            ("string.h" include (:system-flag t) nil [2731 2750])
+            ("stdlib.h" include (:system-flag t) nil [2751 2770])
+            ("uint" type
+               (:typedef ("unsigned int")
+                :type "typedef")
+                nil [2772 2798])
+            ("lint" type
+               (:typedef ("long int")
+                :type "typedef")
+                nil [2799 2821])
+            ("ushort" type
+               (:typedef ("unsigned short")
+                :type "typedef")
+                nil [2822 2852])
+            ("TRUE" variable (:constant-flag t) nil [2893 2897])
+            ("FALSE" variable (:constant-flag t) nil [2941 2946])
+            ("NULL" variable (:constant-flag t) nil [2988 2992])
+            ("ERRO" variable (:constant-flag t) nil [3013 3017])
+            ("UNUSED" variable (:constant-flag t) nil [3083 3089])
+            ("grafo" type
+               (:members 
+                  ( ("nvertices" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3124 3140])
+                    ("narestas" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3142 3157])
+                    ("direcionado" variable (:type "int") (reparse-symbol classsubparts) [3159 3176])
+                    ("ponderado" variable (:type "int") (reparse-symbol classsubparts) [3178 3193])
+                    ("nome" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3195 3206])
+                    ("vertices" variable (:type ("lista" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3208 3223]))                  
+                :type "struct")
+                nil [3108 3226])
+            ("vertice" type
+               (:members 
+                  ( ("nome" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3246 3257])
+                    ("vizinhos_esq" variable (:type ("lista" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3259 3278])
+                    ("vizinhos_dir" variable (:type ("lista" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3280 3299]))                  
+                :type "struct")
+                nil [3228 3302])
+            ("vertice" type
+               (:typedef ("vertice" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [3303 3335])
+            ("aresta" type
+               (:members 
+                  ( ("ponderado" variable (:type "int") (reparse-symbol classsubparts) [3354 3369])
+                    ("padding" variable (:type "int") (reparse-symbol classsubparts) [3371 3384])
+                    ("peso" variable (:type ("lint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3386 3396])
+                    ("destino" variable (:type ("vertice" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3398 3414]))                  
+                :type "struct")
+                nil [3337 3417])
+            ("aresta" type
+               (:typedef ("aresta" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [3418 3448])
+            ("destroi_vertice" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3471 3477]))                  
+                :type "int")
+                nil [3450 3478])
+            ("nome_grafo" function
+               (:pointer 1
+                :arguments 
+                  ( ("g" variable (:type ("grafo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3608 3616]))                  
+                :type "char")
+                nil [3591 3637])
+            ("nome_vertice" function
+               (:pointer 1
+                :arguments 
+                  ( ("v" variable (:type ("vertice" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3770 3780]))                  
+                :type "char")
+                nil [3751 3801])
+            ("ponderado" function
+               (:arguments 
+                  ( ("g" variable (:type ("grafo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3975 3983]))                  
+                :type "int")
+                nil [3961 4009])
+            ("direcionado" function
+               (:arguments 
+                  ( ("g" variable (:type ("grafo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4185 4193]))                  
+                :type "int")
+                nil [4169 4221])
+            ("numero_vertices" function
+               (:arguments 
+                  ( ("g" variable (:type ("grafo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4376 4384]))                  
+                :type "unsigned int")
+                nil [4347 4410])
+            ("numero_arestas" function
+               (:arguments 
+                  ( ("g" variable (:type ("grafo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4569 4577]))                  
+                :type "unsigned int")
+                nil [4541 4602])
+            ("escreve_grafo" function
+               (:arguments 
+                  ( ("output" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4911 4924])
+                    ("g" variable (:type ("grafo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4925 4933]))                  
+                :type ("grafo" type (:type "class") nil nil))
+                nil [4891 5810])
+            ("destroi_grafo" function
+               (:arguments 
+                  ( ("g" variable (:type ("grafo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6015 6023]))                  
+                :type "int")
+                nil [5997 6135])
+            ("destroi_vertice" function
+               (:arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6157 6165]))                  
+                :type "int")
+                nil [6137 6295])
+            ("no" type
+               (:members 
+                  ( ("conteudo" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [6494 6509])
+                    ("anterior" variable (:type ("no" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6512 6524])
+                    ("proximo" variable (:type ("no" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6527 6539]))                  
+                :type "struct")
+                nil [6479 6542])
+            ("lista" type
+               (:members 
+                  ( ("tamanho" variable (:type "unsigned int") (reparse-symbol classsubparts) [6659 6680])
+                    ("padding" variable (:type "int") (reparse-symbol classsubparts) [6683 6695])
+                    ("primeiro" variable (:type ("no" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6723 6735]))                  
+                :type "struct")
+                nil [6641 6738])
+            ("tamanho_lista" function
+               (:arguments 
+                  ( ("l" variable (:type ("lista" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6883 6891]))                  
+                :type "unsigned int")
+                nil [6856 6914])
+            ("primeiro_no" function
+               (:arguments 
+                  ( ("l" variable (:type ("lista" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7076 7084]))                  
+                :type ("no" type (:type "class") nil nil))
+                nil [7061 7108])
+            ("conteudo" function
+               (:pointer 1
+                :arguments 
+                  ( ("n" variable (:type ("no" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7261 7266]))                  
+                :type "void")
+                nil [7246 7290])
+            ("proximo_no" function
+               (:arguments 
+                  ( ("n" variable (:type ("no" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7462 7467]))                  
+                :type ("no" type (:type "class") nil nil))
+                nil [7448 7490])
+            ("constroi_lista" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7663 7668]))                  
+                :type ("lista" type (:type "class") nil nil))
+                nil [7642 7800])
+            ("destroi_lista" function
+               (:arguments 
+                  ( ("l" variable (:type ("lista" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8100 8108])
+                    ("destroi" variable (:type "int") (reparse-symbol arg-sub-list) [8109 8128]))                  
+                :type "int")
+                nil [8082 8322])
+            ("insere_lista" function
+               (:arguments 
+                  ( ("conteudo" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8533 8548])
+                    ("l" variable (:type ("lista" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8549 8557]))                  
+                :type ("no" type (:type "class") nil nil))
+                nil [8517 8745])
+            ("remove_no" function
+               (:arguments 
+                  ( ("l" variable
+                       (:pointer 1
+                        :type ("lista" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9005 9021])
+                    ("rno" variable
+                       (:pointer 1
+                        :type ("no" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9022 9037])
+                    ("destroi" variable (:type "int") (reparse-symbol arg-sub-list) [9038 9057]))                  
+                :type "int")
+                nil [8991 9479])
+            ("guarda_arcos" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("Agraph_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9717 9727])
+                    ("" variable
+                       (:pointer 1
+                        :type ("Agnode_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9728 9738])
+                    ("" variable (:type ("grafo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9739 9745]))                  
+                :type "void")
+                nil [9698 9746])
+            ("guarda_arestas" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("Agraph_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9768 9778])
+                    ("" variable
+                       (:pointer 1
+                        :type ("Agnode_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9779 9789])
+                    ("" variable (:type ("grafo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9790 9796])
+                    ("" variable (:type ("vertice" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9797 9805]))                  
+                :type "void")
+                nil [9747 9806])
+            ("constroi_grafo" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("Agraph_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9828 9838])
+                    ("" variable (:type ("grafo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9839 9845]))                  
+                :type "void")
+                nil [9807 9846])
+            ("alloc_grafo" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9865 9870]))                  
+                :type ("grafo" type (:type "class") nil nil))
+                nil [9847 9871])
+            ("alloc_vertice" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9894 9906]))                  
+                :type ("vertice" type (:type "class") nil nil))
+                nil [9872 9907])
+            ("alloc_aresta" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9929 9934]))                  
+                :type ("aresta" type (:type "class") nil nil))
+                nil [9908 9935])
+            ("dup_aresta" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("aresta" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9955 9962]))                  
+                :type ("aresta" type (:type "class") nil nil))
+                nil [9936 9963])
+            ("str_dup" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9979 9991]))                  
+                :type "char")
+                nil [9964 9992])
+            ("busca_vertice" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10015 10027])
+                    ("" variable (:type ("lista" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10028 10034]))                  
+                :type ("vertice" type (:type "class") nil nil))
+                nil [9993 10035])
+            ("print_a" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vertice" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10050 10058])
+                    ("" variable (:type ("lista" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10059 10065]))                  
+                :type "void")
+                nil [10037 10066])
+            ("print_v" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("g" variable (:type ("grafo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10080 10088]))                  
+                :type "void")
+                nil [10067 10089])
+            ("print_v" function
+               (:arguments 
+                  ( ("g" variable (:type ("grafo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10103 10111]))                  
+                :type "void")
+                nil [10090 10481])
+            ("print_a" function
+               (:arguments 
+                  ( ("v" variable (:type ("vertice" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10496 10506])
+                    ("l" variable (:type ("lista" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10507 10515]))                  
+                :type "void")
+                nil [10483 10973])
+            ("alloc_grafo" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10993 10998]))                  
+                :type ("grafo" type (:type "class") nil nil))
+                nil [10975 11064])
+            ("alloc_vertice" function
+               (:arguments 
+                  ( ("nome" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11088 11105]))                  
+                :type ("vertice" type (:type "class") nil nil))
+                nil [11066 11297])
+            ("alloc_aresta" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11319 11324]))                  
+                :type ("aresta" type (:type "class") nil nil))
+                nil [11299 11458])
+            ("dup_aresta" function
+               (:arguments 
+                  ( ("a" variable (:type ("aresta" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11478 11487]))                  
+                :type ("aresta" type (:type "class") nil nil))
+                nil [11460 11607])
+            ("str_dup" function
+               (:pointer 1
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11623 11639]))                  
+                :type "char")
+                nil [11609 11726])
+            ("le_grafo" function
+               (:arguments 
+                  ( ("input" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12307 12319]))                  
+                :type ("grafo" type (:type "class") nil nil))
+                nil [12292 12797])
+            ("busca_vertice" function
+               (:arguments 
+                  ( ("nome" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12821 12838])
+                    ("l" variable (:type ("lista" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12839 12847]))                  
+                :type ("vertice" type (:type "class") nil nil))
+                nil [12799 13012])
+            ("guarda_arcos" function
+               (:arguments 
+                  ( ("ag" variable
+                       (:pointer 1
+                        :type ("Agraph_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13032 13045])
+                    ("av" variable
+                       (:pointer 1
+                        :type ("Agnode_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13046 13059])
+                    ("g" variable (:type ("grafo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13060 13068]))                  
+                :type "void")
+                nil [13014 13108])
+            ("guarda_arestas" function
+               (:arguments 
+                  ( ("ag" variable
+                       (:pointer 1
+                        :type ("Agraph_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13130 13143])
+                    ("agn" variable
+                       (:pointer 1
+                        :type ("Agnode_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13144 13158])
+                    ("g" variable (:type ("grafo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13159 13167])
+                    ("v" variable (:type ("vertice" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13168 13178]))                  
+                :type "void")
+                nil [13110 13892])
+            ("constroi_grafo" function
+               (:arguments 
+                  ( ("ag" variable
+                       (:pointer 1
+                        :type ("Agraph_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13914 13927])
+                    ("g" variable (:type ("grafo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13928 13936]))                  
+                :type "void")
+                nil [13894 14422]))          
+      :file "grafo.c"
+      :pointmax 14423
+      :fsize 14487
+      :lastmodtime '(22550 40766 960977 822000)
+      :unmatched-syntax '((semantic-list 9049 . 9057) (semantic-list 8120 . 8128) (punctuation 2869 . 2870) (BOOL 2865 . 2869) (INT 2861 . 2864) (TYPEDEF 2853 . 2860) (semantic-list 2560 . 2568) (semantic-list 2246 . 2254) (symbol 14423 . 14424) (semantic-list 9049 . 9057) (semantic-list 8120 . 8128) (punctuation 2869 . 2870) (BOOL 2865 . 2869) (INT 2861 . 2864) (TYPEDEF 2853 . 2860) (semantic-list 2560 . 2568) (semantic-list 2246 . 2254))
+      :lexical-table 
+        '(("UNUSED" (spp-arg-list ("x") 3089 . 3092) . ((semantic-list "(void)" 3096 . 3102) (semantic-list "(x)" 3102 . 3105)))
+          ("ERRO" (spp-arg-list ("fmt" "...") 3017 . 3027) . ((semantic-list "(fprintf(stderr, (fmt), ## __VA_ARGS__))" 3034 . 3074)))
+          ("TRUE" . ((number "1" 2909 . 2910)))
+          ("FALSE" . ((number "0" 2957 . 2958)))
+          ("NULL" . ((number "0" 2995 . 2996)))
+          ("_XOPEN_SOURCE")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_GRAFO_H" variable (:constant-flag t) nil [28 36])
+            ("_GRAFO_H" variable (:constant-flag t) nil [28 36])
+            ("_GRAFO_H" variable (:constant-flag t) nil [28 36])
+            ("stdio.h" include (:system-flag t) nil [38 56])
+            ("grafo" type
+               (:typedef ("grafo" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [473 501])
+            ("nome_grafo" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("g" variable (:type ("grafo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [631 639]))                  
+                :type "char")
+                nil [614 640])
+            ("direcionado" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("g" variable (:type ("grafo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [803 811]))                  
+                :type "int")
+                nil [787 812])
+            ("ponderado" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("g" variable (:type ("grafo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [987 995]))                  
+                :type "int")
+                nil [973 996])
+            ("numero_vertices" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("g" variable (:type ("grafo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1152 1160]))                  
+                :type "unsigned int")
+                nil [1123 1161])
+            ("numero_arestas" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("g" variable (:type ("grafo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1321 1329]))                  
+                :type "unsigned int")
+                nil [1293 1330])
+            ("vertice" type
+               (:typedef ("vertice" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [1539 1571])
+            ("nome_vertice" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("v" variable (:type ("vertice" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1705 1715]))                  
+                :type "char")
+                nil [1686 1716])
+            ("vertice_nome" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1922 1930])
+                    ("g" variable (:type ("grafo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1931 1939]))                  
+                :type ("vertice" type (:type "class") nil nil))
+                nil [1901 1940])
+            ("le_grafo" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("input" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2529 2541]))                  
+                :type ("grafo" type (:type "class") nil nil))
+                nil [2514 2542])
+            ("destroi_grafo" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("g" variable (:type ("grafo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2750 2758]))                  
+                :type "int")
+                nil [2732 2759])
+            ("escreve_grafo" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("output" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3072 3085])
+                    ("g" variable (:type ("grafo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3086 3094]))                  
+                :type ("grafo" type (:type "class") nil nil))
+                nil [3052 3095])
+            ("grau" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("v" variable (:type ("vertice" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3398 3408])
+                    ("direcao" variable (:type "int") (reparse-symbol arg-sub-list) [3409 3421])
+                    ("g" variable (:type ("grafo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3422 3430]))                  
+                :type "unsigned int")
+                nil [3380 3431]))          
+      :file "grafo.h"
+      :pointmax 3440
+      :fsize 3467
+      :lastmodtime '(22452 65400 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_GRAFO_H")
+          )
+))
+  :file "!home!m3cool!doc!bcc!grafos-ci065!2-prev-smesters-renato!trabalho-1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -37,8 +37,8 @@
   :init
   (global-company-mode 1)
   (delete 'company-semantic company-backends))
-;; (define-key c-mode-map  [(control tab)] 'company-complete)
-;; (define-key c++-mode-map  [(control tab)] 'company-complete)
+;;  (define-key c-mode-map  [(control tab)] 'company-complete)
+;;  (define-key c++-mode-map  [(control tab)] 'company-complete))
 
 ;; Package: projejctile
 (use-package projectile
@@ -56,5 +56,18 @@
 ;; activate whitespace-mode to view all whitespace characters
 (global-set-key (kbd "C-c w") 'whitespace-mode)
 (windmove-default-keybindings)
+
+(setq-default major-mode 'text-mode)
+(add-hook 'text-mode-hook 'flyspell-mode)
+
+(setq initial-scratch-message "")
+(setq initial-major-mode 'text-mode)
+(add-hook 'text-mode-hook 'turn-on-auto-fill)
+
+(setq linum-format " %3d")
+(global-linum-mode t)
+
+;; Speedbar to explore source files
+(setq speedbar-show-unknown-files t)
 
 (provide 'setup-general)

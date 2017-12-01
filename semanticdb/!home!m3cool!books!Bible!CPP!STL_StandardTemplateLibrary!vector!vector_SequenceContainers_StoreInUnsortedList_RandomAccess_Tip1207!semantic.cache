@@ -1,0 +1,76 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [40 60])
+            ("INTVECTOR" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [62 92])
+            ("ARRAY_SIZE" variable
+               (:constant-flag t
+                :default-value "4"
+                :type "int")
+                nil [93 118])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [129 134]))                  
+                :type "int")
+                nil [120 1283]))          
+      :file "vector.cpp"
+      :pointmax 1284
+      :fsize 1323
+      :lastmodtime '(21076 41649 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "vector"
+      :fsize 28792
+      :lastmodtime '(22789 1216 359131 291000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [40 60])
+            ("INTVECTOR" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [62 92])
+            ("ARRAY_SIZE" variable
+               (:constant-flag t
+                :default-value "4"
+                :type "int")
+                nil [93 114])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [126 131]))                  
+                :type "void")
+                nil [116 1151]))          
+      :file "vector1.cpp"
+      :pointmax 1152
+      :fsize 1185
+      :lastmodtime '(17725 25052 0 0)
+      :unmatched-syntax nil))
+  :file "!home!m3cool!books!Bible!CPP!STL_StandardTemplateLibrary!vector!vector_SequenceContainers_StoreInUnsortedList_RandomAccess_Tip1207!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

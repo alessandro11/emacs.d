@@ -1,0 +1,295 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("fortes.h" include nil nil [585 604])
+            ("VertexesByName" variable (:type ("VertexSetByName" type (:type "class") nil nil)) nil [606 637])
+            ("VertexesById" variable (:type ("VertexSetById" type (:type "class") nil nil)) nil [638 665])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [769 774]))                  
+                :type "int")
+                nil [760 1057])
+            ("GetNeighborhood" function
+               (:prototype-flag t
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("Agraph_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1087 1097])
+                    ("" variable
+                       (:pointer 1
+                        :type ("Agnode_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1098 1108])
+                    ("" variable
+                       (:pointer 1
+                        :type ("Graph" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1109 1116]))                  
+                :type "void")
+                nil [1059 1117])
+            ("ReadGraph" function
+               (:arguments 
+                  ( ("g" variable
+                       (:pointer 1
+                        :type ("Agraph_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1133 1145])
+                    ("G" variable
+                       (:pointer 1
+                        :type ("Graph" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1146 1155]))                  
+                :type "void")
+                nil [1118 1497])
+            ("GetNeighborhood" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("g" variable
+                       (:pointer 1
+                        :type ("Agraph_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1527 1539])
+                    ("u" variable
+                       (:pointer 1
+                        :type ("Agnode_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1540 1552])
+                    ("G" variable
+                       (:pointer 1
+                        :type ("Graph" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1553 1562]))                  
+                :type "void")
+                nil [1499 1889])
+            ("GetStrongConnectedComponents" function
+               (:parent "Graph"
+                :arguments 
+                  ( ("u" variable (:type "int") (reparse-symbol arg-sub-list) [1932 1938])
+                    ("pre" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1939 1949])
+                    ("low" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1950 1960])
+                    ("s" variable
+                       (:pointer 1
+                        :type ("Stack" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1961 1970])
+                    ("IsInStack" variable
+                       (:dereference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [1971 1988]))                  
+                :type "void")
+                nil [1891 3135])
+            ("GetAllStrongConnectedComponents" function
+               (:parent "Graph"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3181 3186]))                  
+                :type "void")
+                nil [3137 3553])
+            ("Show" function
+               (:parent "Graph"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3572 3577]))                  
+                :type "void")
+                nil [3555 3825]))          
+      :file "fortes.cpp"
+      :pointmax 3826
+      :fsize 3833
+      :lastmodtime '(22855 2144 163169 549000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__FORTES_H__" variable (:constant-flag t) nil [614 626])
+            ("iostream" include (:system-flag t) nil [628 647])
+            ("list" include (:system-flag t) nil [648 663])
+            ("stack" include (:system-flag t) nil [664 680])
+            ("string" include (:system-flag t) nil [681 698])
+            ("vector" include (:system-flag t) nil [699 716])
+            ("unordered_map" include (:system-flag t) nil [717 741])
+            ("graphviz/cgraph.h" include (:system-flag t) nil [742 770])
+            ("NOT_VISITED" variable (:constant-flag t) nil [780 791])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [797 817])
+            ("UINT" type
+               (:typedef ("unsigned int")
+                :type "typedef")
+                nil [819 845])
+            ("VertexSet" type
+               (:typedef ("std::vector" type
+                     (:template-specifier 
+                        ( ("UINT" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [846 882])
+            ("AttributeSet" type
+               (:typedef ("std::unordered_map" type
+                     (:template-specifier 
+                        ( ("std::string" type nil nil nil)
+                          ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [883 941])
+            ("__Vertex" type
+               (:members 
+                  ( ("Id" variable (:type ("UINT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [971 979])
+                    ("OutDegree" variable (:type ("UINT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [982 997])
+                    ("Set" variable (:type "int") (reparse-symbol classsubparts) [1000 1008])
+                    ("Parent" variable
+                       (:pointer 1
+                        :type ("__Vertex" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1011 1035])
+                    ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1038 1055])
+                    ("attributes" variable (:type ("AttributeSet" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1058 1082])
+                    ("Neighborhood" variable (:type ("VertexSet" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1085 1108]))                  
+                :type "struct")
+                nil [943 1118])
+            ("Vertex" type
+               (:typedef ("__Vertex" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [943 1118])
+            ("VertexSetById" type
+               (:typedef ("std::unordered_map" type
+                     (:template-specifier 
+                        ( ("UINT" type nil nil nil)
+                          ("Vertex" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [1119 1174])
+            ("VertexSetByName" type
+               (:typedef ("std::unordered_map" type
+                     (:template-specifier 
+                        ( ("std::string" type nil nil nil)
+                          ("UINT" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [1175 1237])
+            ("AdjacentSet" type
+               (:typedef ("std::list" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [1240 1275])
+            ("Stack" type
+               (:typedef ("std::stack" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [1276 1306])
+            ("Graph" type
+               (:members 
+                  ( ("V" variable (:type "int") (reparse-symbol classsubparts) [1323 1329])
+                    ("adj" variable
+                       (:pointer 1
+                        :type ("AdjacentSet" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1354 1371])
+                    ("GetStrongConnectedComponents" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("u" variable (:type "int") (reparse-symbol arg-sub-list) [1409 1415])
+                            ("pre" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1416 1426])
+                            ("low" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1427 1437])
+                            ("s" variable
+                               (:pointer 1
+                                :type ("Stack" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1438 1447])
+                            ("IsInStack" variable
+                               (:dereference 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [1448 1465]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1375 1466])
+                    ("public" label nil (reparse-symbol classsubparts) [1469 1476])
+                    ("name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1479 1491])
+                    ("Graph" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("V" variable (:type "int") (reparse-symbol arg-sub-list) [1501 1507]))                          
+                        :type ("Graph" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1495 1554])
+                    ("addEdge" function
+                       (:arguments 
+                          ( ("v" variable (:type "int") (reparse-symbol arg-sub-list) [1571 1577])
+                            ("w" variable (:type "int") (reparse-symbol arg-sub-list) [1578 1584]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1558 1610])
+                    ("GetAllStrongConnectedComponents" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1650 1655]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1613 1656])
+                    ("Show" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1669 1674]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1659 1675]))                  
+                :type "class")
+                nil [1307 1678])
+            ("ReadGraph" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("Agraph_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1716 1726])
+                    ("" variable
+                       (:pointer 1
+                        :type ("Graph" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1727 1734]))                  
+                :type "void")
+                nil [1701 1735])
+            ("PrintVertexes" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1755 1760]))                  
+                :type "void")
+                nil [1736 1761]))          
+      :file "fortes.h"
+      :pointmax 1789
+      :fsize 1788
+      :lastmodtime '(22854 62598 13241 274000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("NOT_VISITED" . ((punctuation "-" 793 . 794) (number "1" 794 . 795)))
+          ("__FORTES_H__")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("CC" variable (:default-value ("g++")) nil [1 8])
+            ("CPPFLAGS" variable (:default-value ("-std=c++11" "-Wall")) nil [9 35])
+            ("fortes" function (:arguments ("fortes.cpp")) nil [36 105])
+            ("clean" function nil nil [106 129]))          
+      :file "makefile"
+      :pointmax 129
+      :fsize 131
+      :lastmodtime '(22855 1668 153176 267000)
+      :unmatched-syntax nil))
+  :file "!home!m3cool!doc!bcc!grafos-ci065!t3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

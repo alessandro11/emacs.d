@@ -1,0 +1,187 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("QWINDOWDEFS_H" variable (:constant-flag t) nil [2046 2059])
+            ("QtCore/qobjectdefs.h" include (:system-flag t) nil [2061 2092])
+            ("QtCore/qnamespace.h" include (:system-flag t) nil [2093 2123])
+            ("QPaintDevice" type
+               (:prototype t
+                :type "class")
+                nil [2207 2226])
+            ("QWidget" type
+               (:prototype t
+                :type "class")
+                nil [2227 2241])
+            ("QDialog" type
+               (:prototype t
+                :type "class")
+                nil [2242 2256])
+            ("QColor" type
+               (:prototype t
+                :type "class")
+                nil [2257 2270])
+            ("QPalette" type
+               (:prototype t
+                :type "class")
+                nil [2271 2286])
+            ("QCursor" type
+               (:prototype t
+                :type "class")
+                nil [2332 2346])
+            ("QPoint" type
+               (:prototype t
+                :type "class")
+                nil [2347 2360])
+            ("QSize" type
+               (:prototype t
+                :type "class")
+                nil [2361 2373])
+            ("QRect" type
+               (:prototype t
+                :type "class")
+                nil [2374 2386])
+            ("QPolygon" type
+               (:prototype t
+                :type "class")
+                nil [2387 2402])
+            ("QPainter" type
+               (:prototype t
+                :type "class")
+                nil [2403 2418])
+            ("QRegion" type
+               (:prototype t
+                :type "class")
+                nil [2419 2433])
+            ("QFont" type
+               (:prototype t
+                :type "class")
+                nil [2434 2446])
+            ("QFontMetrics" type
+               (:prototype t
+                :type "class")
+                nil [2447 2466])
+            ("QFontInfo" type
+               (:prototype t
+                :type "class")
+                nil [2467 2483])
+            ("QPen" type
+               (:prototype t
+                :type "class")
+                nil [2484 2495])
+            ("QBrush" type
+               (:prototype t
+                :type "class")
+                nil [2496 2509])
+            ("QMatrix" type
+               (:prototype t
+                :type "class")
+                nil [2510 2524])
+            ("QPixmap" type
+               (:prototype t
+                :type "class")
+                nil [2525 2539])
+            ("QBitmap" type
+               (:prototype t
+                :type "class")
+                nil [2540 2554])
+            ("QMovie" type
+               (:prototype t
+                :type "class")
+                nil [2555 2568])
+            ("QImage" type
+               (:prototype t
+                :type "class")
+                nil [2569 2582])
+            ("QPicture" type
+               (:prototype t
+                :type "class")
+                nil [2583 2598])
+            ("QPrinter" type
+               (:prototype t
+                :type "class")
+                nil [2599 2614])
+            ("QTimer" type
+               (:prototype t
+                :type "class")
+                nil [2615 2628])
+            ("QTime" type
+               (:prototype t
+                :type "class")
+                nil [2629 2641])
+            ("QClipboard" type
+               (:prototype t
+                :type "class")
+                nil [2642 2659])
+            ("QString" type
+               (:prototype t
+                :type "class")
+                nil [2660 2674])
+            ("QByteArray" type
+               (:prototype t
+                :type "class")
+                nil [2675 2692])
+            ("QApplication" type
+               (:prototype t
+                :type "class")
+                nil [2693 2712])
+            ("QList" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :prototype t)
+                nil [2714 2747])
+            ("QWidgetList" type
+               (:typedef ("QList" type
+                     (:template-specifier 
+                        ( ("QWidget" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [2748 2785])
+            ("QHash" type
+               (:template 
+                  ( ("K" type (:type "class") nil nil)
+                    ("V" type (:type "class") nil nil))                  
+                :type "class"
+                :prototype t)
+                nil [3658 3697])
+            ("QWidgetMapper" type
+               (:typedef ("QHash" type
+                     (:template-specifier 
+                        ( ("WId" type nil nil nil)
+                          ("QWidget" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [3698 3742])
+            ("QSet" type
+               (:template 
+                  ( ("V" type (:type "class") nil nil))                  
+                :type "class"
+                :prototype t)
+                nil [3744 3773])
+            ("QWidgetSet" type
+               (:typedef ("QSet" type
+                     (:template-specifier 
+                        ( ("QWidget" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [3774 3809]))          
+      :file "qwindowdefs.h"
+      :pointmax 3974
+      :fsize 3973
+      :lastmodtime '(21835 29523 0 0)
+      :unmatched-syntax '((symbol 3828 . 3841) (symbol 3811 . 3827) (symbol 3638 . 3656) (symbol 3622 . 3637) (symbol 2804 . 2817) (symbol 2787 . 2803) (semantic-list 2170 . 2175) (symbol 2161 . 2170) (symbol 2141 . 2159) (symbol 2125 . 2140))
+      :lexical-table 
+        '(("QWINDOWDEFS_H")
+          )
+))
+  :file "!usr!include!qt4!QtGui!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

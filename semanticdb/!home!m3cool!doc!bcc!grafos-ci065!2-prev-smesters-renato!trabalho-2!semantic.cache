@@ -1,0 +1,30 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("TEAM" variable (:default-value ("ae11")) nil [9 21])
+            ("CC" variable (:default-value ("gcc")) nil [22 31])
+            ("INCLUDE" variable (:default-value (".")) nil [31 43])
+            ("CFLAGS" variable (:default-value ("-std=c99" "-Wall")) nil [43 67])
+            ("DEFINES" variable nil nil [67 77])
+            ("OBJS" variable (:default-value ("teste.o" "grafo.o")) nil [77 100])
+            (".SUFFIXES" function (:arguments (".c")) nil [191 206])
+            (".c.o" function nil nil [206 259])
+            ("all" function (:arguments ("teste")) nil [260 271])
+            ("teste" function (:arguments ("$(OBJS)")) nil [272 315])
+            ("grafo.o" function (:arguments ("grafo.c" "grafo.h")) nil [316 341])
+            ("clean" function nil nil [342 368])
+            ("clean-all" function nil nil [369 430])
+            ("tar" function nil nil [431 567]))          
+      :file "Makefile"
+      :pointmax 567
+      :fsize 566
+      :lastmodtime '(22574 23791 160519 522000)
+      :unmatched-syntax '((shell-command 437 . 566) (bol 436 . 436) (shell-command 168 . 183) (bol 167 . 167) (shell-command 154 . 166) (bol 153 . 153) (shell-command 135 . 152) (bol 134 . 134) (shell-command 115 . 128) (bol 114 . 114))))
+  :file "!home!m3cool!doc!bcc!grafos-ci065!2-prev-smesters-renato!trabalho-2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

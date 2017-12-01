@@ -1,0 +1,126 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [498 517])
+            ("vector" include (:system-flag t) nil [518 535])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [537 557])
+            ("VINT" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [559 584])
+            ("set" variable (:type ("VINT" type (:type "class") nil nil)) nil [586 595])
+            ("combinations" variable (:type ("VINT" type (:type "class") nil nil)) nil [596 614])
+            ("print" function
+               (:arguments 
+                  ( ("v" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("VINT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [627 641]))                  
+                :type "void")
+                nil [616 739])
+            ("generate" function
+               (:arguments 
+                  ( ("offset" variable (:type "int") (reparse-symbol arg-sub-list) [755 766])
+                    ("k" variable (:type "int") (reparse-symbol arg-sub-list) [767 773]))                  
+                :type "void")
+                nil [741 989])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1000 1009])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1010 1023]))                  
+                :type "int")
+                nil [991 1158]))          
+      :file "subconjuntos.c"
+      :pointmax 1159
+      :fsize 1151
+      :lastmodtime '(22984 26378 313167 393000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [574 593])
+            ("vector" include (:system-flag t) nil [594 611])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [613 633])
+            ("VINT" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [635 660])
+            ("set" variable (:type ("VINT" type (:type "class") nil nil)) nil [662 671])
+            ("s" variable (:type ("VINT" type (:type "class") nil nil)) nil [672 679])
+            ("combinations" variable (:type ("VINT" type (:type "class") nil nil)) nil [680 698])
+            ("print" function
+               (:arguments 
+                  ( ("v" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("VINT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [711 725]))                  
+                :type "void")
+                nil [700 912])
+            ("generate" function
+               (:arguments 
+                  ( ("offset" variable (:type "int") (reparse-symbol arg-sub-list) [928 939])
+                    ("k" variable (:type "int") (reparse-symbol arg-sub-list) [940 946]))                  
+                :type "void")
+                nil [914 1162])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1173 1182])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1183 1196]))                  
+                :type "int")
+                nil [1164 1398]))          
+      :file "prox-subconj.c"
+      :pointmax 1399
+      :fsize 1398
+      :lastmodtime '(22984 26672 373163 243000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("CC" variable (:default-value ("g++")) nil [1 8])
+            ("CFLAGS" variable (:default-value ("-Wall")) nil [9 22])
+            ("DEFINES" variable nil nil [23 33])
+            ("OBJS" variable (:default-value ("sunconjuntos.o" "prox-subconj.o")) nil [33 70])
+            (".SUFFIXES" function (:arguments (".c")) nil [144 158])
+            (".c.o" function nil nil [158 198])
+            ("all" function (:arguments ("subconjuntos" "prox-subconj")) nil [199 230])
+            ("subconjuntos" function (:arguments ("subconjuntos.o")) nil [231 278])
+            ("prox-subconj" function (:arguments ("prox-subconj.o")) nil [279 326])
+            ("prox-subconj.o" function (:arguments ("prox-subconj.c")) nil [358 389])
+            ("clean" function nil nil [390 452]))          
+      :file "makefile"
+      :pointmax 452
+      :fsize 451
+      :lastmodtime '(22984 26378 313167 393000)
+      :unmatched-syntax nil))
+  :file "!home!m3cool!doc!bcc!top-algorithms-ci355-ci811!enum-conj-t1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

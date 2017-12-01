@@ -1,0 +1,16 @@
+(projectile-global-mode)
+(setq projectile-completion-system 'helm)
+(setq projectile-switch-project-action 'helm-projectile)
+(helm-projectile-on)
+
+;; (use-package projectile
+;;   :commands (projectile-global-mode projectile-ignored-projects projectile-compile-project)
+;;   :init (progn
+;;           (projectile-global-mode)
+;;           (global-set-key (kbd "<f5>") projectile-compile-project))
+;;   :config (progn
+;;             (setq projectile-completion-system 'helm)
+;;             (setq projectile-switch-project-action 'helm-projectile)
+;;             ))
+
+;; (global-set-key (kbd "<f6>") 'next-error)

@@ -1,0 +1,100 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("cstdio" include (:system-flag t) nil [28 45])
+            ("vector" include (:system-flag t) nil [46 63])
+            ("unordered_map" include (:system-flag t) nil [64 88])
+            ("map" include (:system-flag t) nil [89 103])
+            ("string" include (:system-flag t) nil [104 121])
+            ("string.h" include (:system-flag t) nil [122 141])
+            ("set" include (:system-flag t) nil [142 156])
+            ("graphviz/cgraph.h" include (:system-flag t) nil [157 185])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [187 207])
+            ("ii" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [209 235])
+            ("si" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("string" type nil nil nil)
+                          ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [236 265])
+            ("adj" variable (:type ("vector" type
+                 (:template-specifier 
+                    ( ("vector" type (:template-specifier 
+                        ( ("int" type nil nil nil))                        ) nil nil))                    
+                  :type "class")
+                  nil nil)) nil [267 292])
+            ("attr" variable (:type ("vector" type
+                 (:template-specifier 
+                    ( ("map" type (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("int" type nil nil nil))                        ) nil nil))                    
+                  :type "class")
+                  nil nil)) nil [293 321])
+            ("compressnodes" variable (:type ("unordered_map" type
+                 (:template-specifier 
+                    ( ("string" type nil nil nil)
+                      ("int" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [322 363])
+            ("compressattrs" variable (:type ("unordered_map" type
+                 (:template-specifier 
+                    ( ("string" type nil nil nil)
+                      ("int" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [364 405])
+            ("uncompnodes" variable (:type ("unordered_map" type
+                 (:template-specifier 
+                    ( ("int" type nil nil nil)
+                      ("string" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [406 445])
+            ("uncompattrs" variable (:type ("unordered_map" type
+                 (:template-specifier 
+                    ( ("int" type nil nil nil)
+                      ("string" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [446 485])
+            ("visited" variable (:type ("vector" type
+                 (:template-specifier 
+                    ( ("bool" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [486 507])
+            ("sumpaths" function
+               (:arguments 
+                  ( ("v" variable (:type "int") (reparse-symbol arg-sub-list) [523 529])
+                    ("u" variable (:type "int") (reparse-symbol arg-sub-list) [530 536]))                  
+                :type "void")
+                nil [509 751])
+            ("search" function
+               (:arguments 
+                  ( ("v" variable (:type "int") (reparse-symbol arg-sub-list) [765 771]))                  
+                :type "void")
+                nil [753 935])
+            ("main" function (:type "int") nil [937 2992]))          
+      :file "conta-caminhos.cpp"
+      :pointmax 2993
+      :fsize 2992
+      :lastmodtime '(22784 40268 0 0)
+      :unmatched-syntax nil))
+  :file "!home!m3cool!doc!bcc!grafos-ci065!trab2!t2-jmb15-20170429!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

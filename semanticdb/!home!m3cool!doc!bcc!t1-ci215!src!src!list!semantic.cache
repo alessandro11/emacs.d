@@ -1,0 +1,128 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("LIST_H" variable (:constant-flag t) nil [24 30])
+            ("stdlib.h" include (:system-flag t) nil [32 51])
+            ("string.h" include (:system-flag t) nil [52 71])
+            ("stdio.h" include (:system-flag t) nil [72 90])
+            ("semaphore.h" include (:system-flag t) nil [91 113])
+            ("LIST_BLOCK_STORAGE" variable (:constant-flag t) nil [123 141])
+            ("LIST_BLOCK_DATA_SIZE" variable (:constant-flag t) nil [153 173])
+            ("LIST_BLOCK_SIZE" variable (:constant-flag t) nil [185 200])
+            ("List_block" type
+               (:members 
+                  ( ("data" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [238 274])
+                    ("align1" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [279 310])
+                    ("align2" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [279 310])
+                    ("align3" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [279 310])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("List_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [315 339]))                  
+                :type "struct")
+                nil [206 355])
+            ("list_block_t" type
+               (:typedef ("List_block" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [206 355])
+            ("list_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("size" variable (:type "int") (reparse-symbol classsubparts) [378 387])
+                          ("head" variable
+                             (:pointer 1
+                              :type ("list_block_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [392 418])
+                          ("tail" variable
+                             (:pointer 1
+                              :type ("list_block_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [392 418])
+                          ("mutex" variable (:type ("sem_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [423 435]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [357 445])
+            ("list_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("list_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [463 472]))                  
+                :type "void")
+                nil [447 473])
+            ("list_insert" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("list_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [493 502])
+                    ("" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [503 519])
+                    ("" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [520 536]))                  
+                :type "void")
+                nil [475 537])
+            ("list_find" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("list_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [565 574])
+                    ("" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [575 591]))                  
+                :type "unsigned char")
+                nil [539 592])
+            ("list_destroy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("list_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [613 622]))                  
+                :type "void")
+                nil [594 623]))          
+      :file "list.h"
+      :pointmax 632
+      :fsize 631
+      :lastmodtime '(23032 53029 291120 747000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LIST_BLOCK_DATA_SIZE" . ((number "32" 174 . 176)))
+          ("LIST_H")
+          ("LIST_BLOCK_STORAGE" . ((number "15" 142 . 144)))
+          ("LIST_BLOCK_SIZE" . ((number "480" 201 . 204)))
+          )
+))
+  :file "!home!m3cool!doc!bcc!t1-ci215!src!src!list!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

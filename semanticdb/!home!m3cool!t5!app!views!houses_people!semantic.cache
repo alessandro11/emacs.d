@@ -1,0 +1,17 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode html-mode
+      :tags 
+        '( ("Listing Houses People" section nil nil [35 458]))          
+      :file "index.html.erb"
+      :pointmax 458
+      :fsize 457
+      :lastmodtime '(22850 12796 0 0)
+      :unmatched-syntax nil))
+  :file "!home!m3cool!t5!app!views!houses_people!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

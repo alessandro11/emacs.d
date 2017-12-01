@@ -1,0 +1,169 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("HASH_H" variable (:constant-flag t) nil [24 30])
+            ("stdlib.h" include (:system-flag t) nil [32 51])
+            ("stdio.h" include (:system-flag t) nil [52 70])
+            ("pthread.h" include (:system-flag t) nil [71 91])
+            ("../list/list.h" include nil nil [92 117])
+            ("HT_MAX_BITS" variable (:constant-flag t) nil [127 138])
+            ("HT_MAX_SIZE" variable (:constant-flag t) nil [150 161])
+            ("ht_map_int" variable (:constant-flag t) nil [189 199])
+            ("HT_DESTROY_TH" variable (:constant-flag t) nil [247 260])
+            ("HT_INIT_TH" variable (:constant-flag t) nil [272 282])
+            ("ht_hashtable_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("count" variable (:type "unsigned int") (reparse-symbol classsubparts) [308 327])
+                          ("b" variable
+                             (:pointer 1
+                              :type ("list_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [332 342]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [287 360])
+            ("ht_hashtable" type
+               (:typedef ("ht_hashtable_t" type (:type "class") nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [362 399])
+            ("ht_init" function
+               (:prototype-flag t
+                :type ("ht_hashtable" type (:type "class") nil nil))
+                nil [401 425])
+            ("ht_insert" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [443 459])
+                    ("" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [460 476])
+                    ("" variable (:type ("ht_hashtable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [477 490]))                  
+                :type "void")
+                nil [427 491])
+            ("ht_get" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [516 532])
+                    ("" variable (:type ("ht_hashtable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [533 546]))                  
+                :type "unsigned char")
+                nil [493 547])
+            ("ht_destroy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("ht_hashtable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [566 579]))                  
+                :type "void")
+                nil [549 580]))          
+      :file "hash.h"
+      :pointmax 589
+      :fsize 588
+      :lastmodtime '(23032 53029 291120 747000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("HT_INIT_TH" . ((number "1" 283 . 284)))
+          ("HT_MAX_SIZE" . ((semantic-list "(1<<(HT_MAX_BITS))" 162 . 180)))
+          ("HASH_H")
+          ("HT_DESTROY_TH" . ((number "20" 261 . 263)))
+          ("HT_MAX_BITS" . ((number "18" 139 . 141)))
+          ("ht_map_int" (spp-arg-list ("a") 199 . 202) . ((semantic-list "((a)&( ( 1<<( HT_MAX_BITS ) ) -1))" 203 . 237)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("hash.h" include nil nil [1 18])
+            ("ht_id" type
+               (:members 
+                  ( ("ht" variable (:type ("ht_hashtable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [66 82])
+                    ("id" variable (:type "int") (reparse-symbol classsubparts) [87 94]))                  
+                :type "struct")
+                nil [48 97])
+            ("ht_destroy_lines" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [121 128]))                  
+                :type "void")
+                nil [99 129])
+            ("ht_hash" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [144 160]))                  
+                :type "int")
+                nil [131 161])
+            ("ht_threads" variable
+               (:dereference 1
+                :type ("pthread_t" type (:type "class") nil nil))
+                nil [163 199])
+            ("ht_init" function (:type ("ht_hashtable" type (:type "class") nil nil)) nil [201 593])
+            ("ht_insert" function
+               (:arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [611 630])
+                    ("value" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [631 652])
+                    ("ht" variable (:type ("ht_hashtable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [653 669]))                  
+                :type "void")
+                nil [595 743])
+            ("ht_get" function
+               (:pointer 1
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [768 787])
+                    ("ht" variable (:type ("ht_hashtable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [788 804]))                  
+                :type "unsigned char")
+                nil [745 955])
+            ("ht_hash" function
+               (:arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [970 989]))                  
+                :type "int")
+                nil [957 1239])
+            ("ht_destroy_lines" function
+               (:arguments 
+                  ( ("ht" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1263 1272]))                  
+                :type "void")
+                nil [1241 1430])
+            ("ht_destroy" function
+               (:arguments 
+                  ( ("ht" variable (:type ("ht_hashtable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1449 1465]))                  
+                :type "void")
+                nil [1432 1847]))          
+      :file "hash.c"
+      :pointmax 1848
+      :fsize 1847
+      :lastmodtime '(23032 53029 291120 747000)
+      :unmatched-syntax nil))
+  :file "!home!m3cool!doc!bcc!t1-ci215!src!src!hash!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

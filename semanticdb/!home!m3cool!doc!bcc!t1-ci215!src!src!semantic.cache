@@ -1,0 +1,339 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("sys/types.h" include (:system-flag t) nil [40 62])
+            ("sys/socket.h" include (:system-flag t) nil [63 86])
+            ("stdio.h" include (:system-flag t) nil [87 105])
+            ("sys/un.h" include (:system-flag t) nil [106 125])
+            ("unistd.h" include (:system-flag t) nil [126 145])
+            ("pthread.h" include (:system-flag t) nil [146 166])
+            ("semaphore.h" include (:system-flag t) nil [167 189])
+            ("sys/ioctl.h" include (:system-flag t) nil [190 212])
+            ("openssl/conf.h" include (:system-flag t) nil [213 238])
+            ("openssl/evp.h" include (:system-flag t) nil [239 263])
+            ("openssl/err.h" include (:system-flag t) nil [264 288])
+            ("openssl/engine.h" include (:system-flag t) nil [289 316])
+            ("casanova.h" include nil nil [318 339])
+            ("locking/locking.h" include nil nil [340 368])
+            ("hash/hash.h" include nil nil [369 391])
+            ("CRYPTEDSIZE" variable (:constant-flag t) nil [485 496])
+            ("PUT_THREADS" variable (:constant-flag t) nil [510 521])
+            ("GET_THREADS" variable (:constant-flag t) nil [532 543])
+            ("key" variable
+               (:pointer 1
+                :default-value "(unsigned char *)\"01234567890123456789012345678901\""
+                :type "unsigned char")
+                nil [652 725])
+            ("encrypt" function
+               (:prototype-flag t
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("EVP_CIPHER_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [745 762])
+                    ("" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [763 779])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [780 785])
+                    ("" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [786 802]))                  
+                :type "int")
+                nil [726 803])
+            ("decrypt" function
+               (:prototype-flag t
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("EVP_CIPHER_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [823 840])
+                    ("" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [841 857])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [858 863])
+                    ("" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [864 880]))                  
+                :type "int")
+                nil [804 881])
+            ("handleErrors" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [901 906]))                  
+                :type "void")
+                nil [883 943])
+            ("get_entries" function
+               (:prototype-flag t
+                :type "void")
+                nil [946 965])
+            ("put_entries" function
+               (:prototype-flag t
+                :type "void")
+                nil [966 985])
+            ("store_mult" function
+               (:prototype-flag t
+                :type "void")
+                nil [987 1005])
+            ("retrieve_mult" function
+               (:prototype-flag t
+                :type "void")
+                nil [1006 1027])
+            ("fp" variable
+               (:pointer 1
+                :type ("FILE" type (:type "class") nil nil))
+                nil [1030 1039])
+            ("sem_mutex_crypt" variable (:type ("sem_t" type (:type "class") nil nil)) nil [1041 1063])
+            ("sem_mutex_hash" variable (:type ("sem_t" type (:type "class") nil nil)) nil [1064 1085])
+            ("sem_rw" variable (:type ("sem_t" type (:type "class") nil nil)) nil [1086 1099])
+            ("sem_put_pronta" variable (:type ("sem_t" type (:type "class") nil nil)) nil [1102 1123])
+            ("sem_put_servico" variable
+               (:dereference 1
+                :type ("sem_t" type (:type "class") nil nil))
+                nil [1124 1159])
+            ("put_threads" variable
+               (:dereference 1
+                :type ("pthread_t" type (:type "class") nil nil))
+                nil [1160 1195])
+            ("put_threads_list" variable
+               (:dereference 1
+                :type "int")
+                nil [1196 1230])
+            ("put_threads_mavail" variable
+               (:dereference 1
+                :type "int")
+                nil [1231 1267])
+            ("put_threads_buffer" variable
+               (:dereference 2
+                :type "char")
+                nil [1268 1327])
+            ("sem_get_pronta" variable (:type ("sem_t" type (:type "class") nil nil)) nil [1329 1350])
+            ("sem_get_servico" variable
+               (:dereference 1
+                :type ("sem_t" type (:type "class") nil nil))
+                nil [1351 1386])
+            ("get_threads" variable
+               (:dereference 1
+                :type ("pthread_t" type (:type "class") nil nil))
+                nil [1387 1422])
+            ("get_threads_list" variable
+               (:dereference 1
+                :type "int")
+                nil [1423 1457])
+            ("get_threads_mavail" variable
+               (:dereference 1
+                :type "int")
+                nil [1458 1494])
+            ("get_threads_buffer" variable
+               (:dereference 2
+                :type "char")
+                nil [1495 1554])
+            ("sem_teste" variable (:type ("sem_t" type (:type "class") nil nil)) nil [1556 1572])
+            ("ht" variable (:type ("ht_hashtable" type (:type "class") nil nil)) nil [1575 1591])
+            ("ctxge" variable
+               (:pointer 1
+                :type ("EVP_CIPHER_CTX" type (:type "class") nil nil))
+                nil [1593 1623])
+            ("ctxgd" variable
+               (:pointer 1
+                :type ("EVP_CIPHER_CTX" type (:type "class") nil nil))
+                nil [1593 1623])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1634 1643])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1644 1657]))                  
+                :type "int")
+                nil [1625 3236])
+            ("store" function
+               (:arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3250 3263])
+                    ("ctxe" variable
+                       (:pointer 1
+                        :type ("EVP_CIPHER_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3264 3286]))                  
+                :type "void")
+                nil [3239 3563])
+            ("put_entries" function (:type "void") nil [3565 7279])
+            ("store_mult" function
+               (:arguments 
+                  ( ("id" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7297 7306]))                  
+                :type "void")
+                nil [7281 7932])
+            ("retrieve" function
+               (:arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7948 7961])
+                    ("fp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7962 7971])
+                    ("ctxe" variable
+                       (:pointer 1
+                        :type ("EVP_CIPHER_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7972 7994])
+                    ("ctxde" variable
+                       (:pointer 1
+                        :type ("EVP_CIPHER_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7995 8018]))                  
+                :type "void")
+                nil [7934 8875])
+            ("retrieve_mult" function
+               (:arguments 
+                  ( ("id" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8895 8904]))                  
+                :type "void")
+                nil [8876 9640])
+            ("get_entries" function (:type "void") nil [9642 12989])
+            ("encrypt" function
+               (:arguments 
+                  ( ("ctxe" variable
+                       (:pointer 1
+                        :type ("EVP_CIPHER_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13191 13213])
+                    ("plaintext" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [13214 13239])
+                    ("plaintext_len" variable (:type "int") (reparse-symbol arg-sub-list) [13240 13258])
+                    ("ciphertext" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [13259 13285]))                  
+                :type "int")
+                nil [13179 13736])
+            ("decrypt" function
+               (:arguments 
+                  ( ("ctxd" variable
+                       (:pointer 1
+                        :type ("EVP_CIPHER_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13750 13772])
+                    ("ciphertext" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [13773 13799])
+                    ("ciphertext_len" variable (:type "int") (reparse-symbol arg-sub-list) [13800 13819])
+                    ("plaintext" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [13820 13845]))                  
+                :type "int")
+                nil [13738 14466]))          
+      :file "casanova.c"
+      :pointmax 14467
+      :fsize 14496
+      :lastmodtime '(23058 16117 140307 426000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GET_THREADS" . ((number "8" 544 . 545)))
+          ("PUT_THREADS" . ((number "8" 522 . 523)))
+          ("CRYPTEDSIZE" . ((number "16" 498 . 500)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("NOME_SIZE" variable (:constant-flag t) nil [9 18])
+            ("FONE_SIZE" variable (:constant-flag t) nil [31 40])
+            ("PUT_MESSAGE_SIZE" variable (:constant-flag t) nil [52 68])
+            ("GET_MESSAGE_SIZE" variable (:constant-flag t) nil [101 117])
+            ("N_MESSAGE" variable (:constant-flag t) nil [163 172])
+            ("SOCK_GET_PATH" variable (:constant-flag t) nil [183 196])
+            ("SOCK_PUT_PATH" variable (:constant-flag t) nil [225 238])
+            ("DATASET_SIZE" variable (:constant-flag t) nil [267 279])
+            ("OUTPUTFILE" variable (:constant-flag t) nil [301 311])
+            ("charset" variable
+               (:dereference 1
+                :default-value "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcccccccccccccccccccccccccccccccccccddddddddddddddddddddddddddeeeeeeeeeeeeeeeeeeeefffffffffffffffffffffffffffffffffffffgggggggggggggggggggghhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiijjjjjjkkkkkkklllllllllllllllllllllllllllmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmnnnnnnnnnnnnnnnnnnnnnnnoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooopppppppppppppppppppppppppqqrrrrrrrrrrrrrrrrsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttuuuuuuuuuuuuuuvvvvvvwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwxyyyyyyyyyyyyyyyyz                                                    AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDDDDDDDDEEEEEEEEEEEEEEEEEEEEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFGGGGGGGGGGGGGGGGGGHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIJJJJJJJJJKKKKLLLLLLLLLLLLLLLLLLLLLLLLMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNNNNNNNNNNNNNNNNNNNNNOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOPPPPPPPPPPPPPPPPPPQQQQRRRRRRRRRRRRRRRRRRRRRRRRSSSSSSSSSSSSSSSSSSSSSSSSSSSTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYZZ                  \""
+                :type "char")
+                nil [324 2289]))          
+      :file "casanova.h"
+      :pointmax 2290
+      :fsize 2289
+      :lastmodtime '(23058 14518 470329 989000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DATASET_SIZE" . 
+              ((number "1000" 280 . 284) (punctuation "*" 284 . 285) (number "1000" 285 . 289) (punctuation "*" 289 . 290) (number "20" 290 . 292)))
+          ("PUT_MESSAGE_SIZE" . ((semantic-list "(NOME_SIZE + FONE_SIZE)" 69 . 92)))
+          ("SOCK_PUT_PATH" . ((string "\"server_put_socket\"" 239 . 258)))
+          ("FONE_SIZE" . ((number "9" 41 . 42)))
+          ("OUTPUTFILE" . ((string "\"telefones\"" 312 . 323)))
+          ("GET_MESSAGE_SIZE" . ((symbol "NOME_SIZE" 118 . 127)))
+          ("NOME_SIZE" . ((number "15" 19 . 21)))
+          ("N_MESSAGE" . ((number "3" 173 . 174)))
+          ("SOCK_GET_PATH" . ((string "\"server_get_socket\"" 197 . 216)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("unistd.h" include (:system-flag t) nil [20 39])
+            ("stdlib.h" include (:system-flag t) nil [40 59])
+            ("errno.h" include (:system-flag t) nil [60 78])
+            ("string.h" include (:system-flag t) nil [79 98])
+            ("sys/types.h" include (:system-flag t) nil [99 121])
+            ("sys/socket.h" include (:system-flag t) nil [122 145])
+            ("sys/un.h" include (:system-flag t) nil [146 165])
+            ("unistd.h" include (:system-flag t) nil [166 185])
+            ("casanova.h" include nil nil [187 208])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [219 224]))                  
+                :type "int")
+                nil [210 3261]))          
+      :file "get_client.c"
+      :pointmax 3263
+      :fsize 3263
+      :lastmodtime '(23058 14533 340329 779000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("errno.h" include (:system-flag t) nil [40 58])
+            ("string.h" include (:system-flag t) nil [59 78])
+            ("sys/types.h" include (:system-flag t) nil [79 101])
+            ("unistd.h" include (:system-flag t) nil [102 121])
+            ("sys/socket.h" include (:system-flag t) nil [122 145])
+            ("sys/un.h" include (:system-flag t) nil [146 165])
+            ("casanova.h" include nil nil [167 188])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [199 204]))                  
+                :type "int")
+                nil [190 2580]))          
+      :file "put_client.c"
+      :pointmax 2581
+      :fsize 2581
+      :lastmodtime '(23032 53029 291120 747000)
+      :unmatched-syntax nil))
+  :file "!home!m3cool!doc!bcc!t1-ci215!src!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

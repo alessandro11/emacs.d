@@ -1,0 +1,74 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-mode
+      :tags 
+        '( ("WIDTH" variable (:default-value "canvas") nil [694 719])
+            ("HEIGHT" variable (:default-value "canvas") nil [751 778])
+            ("PhMax" variable (:default-value "300") nil [809 823])
+            ("PwMax" variable (:default-value "300") nil [824 838])
+            ("novaLinha" function (:arguments 
+              ( ("X1" variable nil (reparse-symbol FormalParameterList) [1145 1147])
+                ("Y1" variable nil (reparse-symbol FormalParameterList) [1148 1150])
+                ("X2" variable nil (reparse-symbol FormalParameterList) [1151 1153])
+                ("Y2" variable nil (reparse-symbol FormalParameterList) [1154 1156]))              ) nil [1126 1383])
+            ("criaVertice" function nil nil [1385 1476])
+            ("achaVertices" function (:arguments 
+              ( ("n" variable nil (reparse-symbol FormalParameterList) [1501 1502]))              ) nil [1478 2768])
+            ("novoPoligono" function nil nil [2770 2966])
+            ("inLine" function (:arguments 
+              ( ("reta" variable nil (reparse-symbol FormalParameterList) [3000 3004])
+                ("Px" variable nil (reparse-symbol FormalParameterList) [3005 3007])
+                ("Py" variable nil (reparse-symbol FormalParameterList) [3008 3010]))              ) nil [2984 3485])
+            ("Desenhar" function nil nil [3487 3743])
+            ("MouseDown" function (:arguments 
+              ( ("evt" variable nil (reparse-symbol FormalParameterList) [3765 3768]))              ) nil [3745 4938])
+            ("MouseUp" function (:arguments 
+              ( ("evt" variable nil (reparse-symbol FormalParameterList) [4958 4961]))              ) nil [4940 5120])
+            ("MouseMove" function (:arguments 
+              ( ("evt" variable nil (reparse-symbol FormalParameterList) [5141 5144]))              ) nil [5122 6044])
+            ("Atualizar" function nil nil [6046 6140])
+            ("MousePosXY" function (:arguments 
+              ( ("evt" variable nil (reparse-symbol FormalParameterList) [6162 6165]))              ) nil [6142 6264]))          
+      :file "draw.js"
+      :pointmax 6491
+      :fsize 6653
+      :lastmodtime '(22802 24174 155914 804000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-mode
+      :tags 
+        '( ("xPos" variable (:default-value "canvas") nil [43 69])
+            ("yPos" variable (:default-value "50") nil [71 85])
+            ("xPosT" variable (:default-value "canvas") nil [87 114])
+            ("yPosT" variable (:default-value "35") nil [116 131])
+            ("xPos2" variable (:default-value "canvas") nil [133 160])
+            ("yPos2" variable (:default-value "100") nil [162 178])
+            ("width2" variable (:default-value "10") nil [180 196])
+            ("height2" variable (:default-value "10") nil [198 215])
+            ("width" variable (:default-value "100") nil [217 233])
+            ("height" variable (:default-value "50") nil [235 251])
+            ("_width" variable (:default-value "90") nil [776 792])
+            ("_height" variable (:default-value "60") nil [794 811]))          
+      :file "scratch.js"
+      :pointmax 2529
+      :fsize 2528
+      :lastmodtime '(22780 49863 76543 219000)
+      :unmatched-syntax '((VARIABLE 2451 . 2458) (VARIABLE 2485 . 2492) (VARIABLE 2511 . 2518) (PAREN_BLOCK 2525 . 2527) (VARIABLE 2405 . 2412) (VARIABLE 2434 . 2441) (PAREN_BLOCK 2446 . 2448) (VARIABLE 2365 . 2372) (PAREN_BLOCK 2377 . 2402) (VARIABLE 2343 . 2350) (PAREN_BLOCK 2360 . 2362) (VARIABLE 2259 . 2266) (VARIABLE 2300 . 2307) (VARIABLE 2324 . 2331) (PAREN_BLOCK 2338 . 2340) (VARIABLE 2213 . 2220) (VARIABLE 2242 . 2249) (PAREN_BLOCK 2254 . 2256) (VARIABLE 2174 . 2181) (PAREN_BLOCK 2186 . 2210) (VARIABLE 2152 . 2159) (PAREN_BLOCK 2169 . 2171) (VARIABLE 2071 . 2078) (VARIABLE 2105 . 2112) (VARIABLE 2133 . 2140) (PAREN_BLOCK 2147 . 2149) (VARIABLE 2025 . 2032) (VARIABLE 2054 . 2061) (PAREN_BLOCK 2066 . 2068) (VARIABLE 1987 . 1994) (PAREN_BLOCK 1999 . 2022) (VARIABLE 1965 . 1972) (PAREN_BLOCK 1982 . 1984) (VARIABLE 1927 . 1933) (PAREN_BLOCK 1946 . 1962) (VARIABLE 1889 . 1895) (PAREN_BLOCK 1908 . 1924) (VARIABLE 1851 . 1857) (PAREN_BLOCK 1870 . 1886) (VARIABLE 1813 . 1819) (PAREN_BLOCK 1832 . 1848) (VARIABLE 1778 . 1784) (PAREN_BLOCK 1797 . 1810) (VARIABLE 1743 . 1749) (PAREN_BLOCK 1762 . 1775) (VARIABLE 1709 . 1715) (PAREN_BLOCK 1728 . 1740) (VARIABLE 1674 . 1680) (PAREN_BLOCK 1693 . 1706) (VARIABLE 1639 . 1645) (PAREN_BLOCK 1658 . 1671) (VARIABLE 1602 . 1608) (PAREN_BLOCK 1621 . 1636) (VARIABLE 1565 . 1571) (PAREN_BLOCK 1584 . 1599) (VARIABLE 1526 . 1532) (PAREN_BLOCK 1545 . 1562) (VAR 1409 . 1412) (PAREN_BLOCK 1450 . 1523) (VAR 927 . 930) (PAREN_BLOCK 968 . 1039) (VAR 813 . 816) (PAREN_BLOCK 854 . 924) (VARIABLE 700 . 707) (VARIABLE 724 . 731) (VARIABLE 757 . 764) (PAREN_BLOCK 771 . 773) (VARIABLE 683 . 690) (PAREN_BLOCK 695 . 697) (VARIABLE 636 . 643) (PAREN_BLOCK 648 . 680) (VARIABLE 583 . 590) (VARIABLE 614 . 621) (PAREN_BLOCK 631 . 633) (VARIABLE 442 . 449) (VARIABLE 472 . 479) (VARIABLE 510 . 517) (VARIABLE 541 . 548) (PAREN_BLOCK 557 . 580) (VARIABLE 368 . 375) (VARIABLE 392 . 399) (VARIABLE 423 . 430) (PAREN_BLOCK 437 . 439) (VARIABLE 320 . 327) (VARIABLE 351 . 358) (PAREN_BLOCK 363 . 365) (VARIABLE 275 . 282) (PAREN_BLOCK 287 . 317) (VARIABLE 253 . 260) (PAREN_BLOCK 270 . 272) (PAREN_BLOCK 33 . 39)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode html-mode
+      :tags 
+        '( ("Trabalho 3 - ci320" section nil nil [152 240])
+            ("Novo polígono" section nil nil [240 394])
+            ("" section nil nil [394 468]))          
+      :file "index.html"
+      :pointmax 468
+      :fsize 468
+      :lastmodtime '(22802 23714 115942 618000)
+      :unmatched-syntax nil))
+  :file "!home!m3cool!doc!bcc!topicos-prog-comp-ci320!trab3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
